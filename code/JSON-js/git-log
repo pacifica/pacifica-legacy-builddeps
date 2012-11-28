@@ -1,95 +1,17 @@
-commit 43d7836c8ec9b31a02a31ae0c400bdae04d3650d
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Mon Oct 8 14:40:29 2012 -0700
+commit 177578e164d0a474f610f404b8433f7255ec42ea
+Author: David Brown <david.brown@pnl.gov>
+Date:   Wed Nov 28 14:50:54 2012 -0800
 
-    Defense against window.prototype
+    here's some more stuff
 
-commit 40f3377a631eaedeec877379f9cb338046cac0e0
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Sun Aug 19 10:25:51 2012 -0700
+commit 19f6722479f44098141d12671f19a684f2f2ad6a
+Author: David Brown <david.brown@pnl.gov>
+Date:   Wed Nov 28 14:48:45 2012 -0800
 
-    For Kyle
+    here's an initial update script
 
-commit f89de6216e6f4ce5101b304b6a5110fd27f6dc1b
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Thu Jul 19 08:31:29 2012 -0700
-
-    Public Domain
-
-commit 96e60ea36b1cd3b5b88cd336447cea8394389d3f
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Thu Jul 19 08:30:33 2012 -0700
-
-    Public Domain
-
-commit 42c18c621a411c3f39a81bb0a387fc50dcd738d9
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Thu Jun 21 16:34:13 2012 -0700
-
-    style
-
-commit 5ca5ccb6dfc74a973a4726550e5bb44c2e262ec3
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Fri Jun 1 14:25:21 2012 -0700
-
-    s
-
-commit fc535e9cc8fa78bbf45a85835c830e7f799a5084
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Thu Mar 22 15:37:57 2012 -0700
-
-    name
-
-commit 5da6de91ee39c5a298ef95e130fa402ba87de6d5
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Tue Mar 13 00:38:23 2012 -0700
-
-    .js
-
-commit 47a9882cddeb1e8529e07af9736218075372b8ac
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Thu Oct 20 11:52:56 2011 -0700
-
-    hygiene
-
-commit 36df833f552168056dc55152acaf28446ab4ef42
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Tue Aug 30 09:18:38 2011 -0700
-
-    /*jslint*/
-
-commit 7a18252d0ec1b46b26afb933f65434dc1f7844f5
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Wed Aug 24 09:42:47 2011 -0700
-
-    [\d+]
-
-commit 8e0b15cb492f63067a88ad786e4d5fc0fa89a241
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Sat Mar 5 17:29:18 2011 -0800
-
-    !isFinite
-
-commit ad6079cbd8dc362a3cc42e1f97c01aa5ccd48bfe
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Wed Feb 23 13:54:25 2011 -0800
-
-    Style conformance.
-
-commit 633fe5ae4bd69985254a68ae111505ec3d3e74ab
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Thu Jan 20 10:47:02 2011 -0800
-
-    Hygiene
-
-commit 8d11dc6950eafc7d01f141ce91d4f585caa29f3b
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Wed Dec 8 01:24:13 2010 -0800
-
-    Create a JSON object only if one does not already exist.
-
-commit 11c7bdf47c3f21b014b1e984be52211142d8d8b7
-Author: Douglas Crockford <douglas@crockford.com>
-Date:   Thu Nov 18 10:45:22 2010 -0800
+commit 82cda7479776bb7f0a3c5c0bf68ba71f0f8cb204
+Author: dmlb2000 <david.brown@pnnl.gov>
+Date:   Wed Nov 28 14:41:17 2012 -0800
 
     first commit
