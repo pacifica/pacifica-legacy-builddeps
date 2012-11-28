@@ -1,7 +1,7 @@
 #!/bin/bash
 
 JQUERY=1.8.1
-JQUERYUI=1.8.23
+JQUERYUI=1.9.2
 JQUERYFORMWIZARD=3.0.5
 QUNIT=1.10.0
 
@@ -17,15 +17,19 @@ mkdir -p code
 pushd code
 wget -O jquery-$JQUERY.min.js http://code.jquery.com/jquery-$JQUERY.min.js
 wget -O jquery-$JQUERY.js http://code.jquery.com/jquery-$JQUERY.js
-wget -O jquery-ui-$JQUERYUI.custom.zip http://jqueryui.com/download/jquery-ui-$JQUERYUI.custom.zip
+../form-download.py -f jquery-ui-$JQUERYUI.custom.zip
 wget -O qunit-$QUNIT.js http://code.jquery.com/qunit/qunit-$QUNIT.js
 wget -O qunit-$QUNIT.css http://code.jquery.com/qunit/qunit-$QUNIT.css
+rm -rf r.js
 git clone https://github.com/jrburke/r.js.git
+rm -rf qTip2
 git clone https://github.com/Craga89/qTip2.git
+rm -rf jQuery-Timepicker-Addon
 git clone https://github.com/trentrichardson/jQuery-Timepicker-Addon.git
 wget -O jquery.formwizard-$JQUERYFORMWIZARD.zip http://thecodemine.org/releases/jquery.formwizard-$JQUERYFORMWIZARD.zip
 wget -O modernizr.js http://modernizr.com/downloads/modernizr.js
 wget -O almond.js https://raw.github.com/jrburke/almond/master/almond.js
+rm -rf JSON-js
 git clone https://github.com/douglascrockford/JSON-js
 wget -O jquery.timeago.js http://timeago.yarp.com/jquery.timeago.js
 wget https://github.com/aFarkas/html5shiv/zipball/master -O html5shiv.zip
