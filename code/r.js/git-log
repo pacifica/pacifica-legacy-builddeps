@@ -1,3 +1,15 @@
+commit 712f4b97e57b5242b963707677d298a6c119c6a6
+Author: David Brown <david.brown@pnl.gov>
+Date:   Wed Nov 28 14:55:18 2012 -0800
+
+    remove duped wgets
+
+commit 2fd6b0e31e609c467d8b91711cf6b806fe7c4b4c
+Author: David Brown <david.brown@pnl.gov>
+Date:   Wed Nov 28 14:54:44 2012 -0800
+
+    Auto Update to 010
+
 commit e45b7b9c11f2a66feb2295f54606a9a3ac858b44
 Author: David Brown <david.brown@pnl.gov>
 Date:   Wed Nov 28 14:51:52 2012 -0800
