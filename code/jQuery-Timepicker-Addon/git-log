@@ -1,35 +1,2871 @@
-commit 712f4b97e57b5242b963707677d298a6c119c6a6
-Author: David Brown <david.brown@pnl.gov>
-Date:   Wed Nov 28 14:55:18 2012 -0800
+commit d9e9d7cd7912d69b232dc87263f0339a6f166ccd
+Merge: f503ab2 e23e650
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Nov 7 17:54:49 2012 -0500
 
-    remove duped wgets
+    Fix last mod date
 
-commit 2fd6b0e31e609c467d8b91711cf6b806fe7c4b4c
-Author: David Brown <david.brown@pnl.gov>
-Date:   Wed Nov 28 14:54:44 2012 -0800
+commit e23e6506ab4f700fc598b90cff70eaf5c76f102a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Nov 7 17:52:12 2012 -0500
 
-    Auto Update to 010
+    New version 1.1.1
 
-commit e45b7b9c11f2a66feb2295f54606a9a3ac858b44
-Author: David Brown <david.brown@pnl.gov>
-Date:   Wed Nov 28 14:51:52 2012 -0800
+commit a4136a67513b5030a03d3d3b1c96d61c2d5ddd4a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Nov 6 12:40:17 2012 -0500
 
-    Auto Update to 010
+    Fixes #497 problem with timeFormat h
 
-commit 177578e164d0a474f610f404b8433f7255ec42ea
-Author: David Brown <david.brown@pnl.gov>
-Date:   Wed Nov 28 14:50:54 2012 -0800
+commit 594747fe91a36d00295d522680bf8ed70d17f50a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Nov 3 10:47:32 2012 -0400
 
-    here's some more stuff
+    Create new dev version
 
-commit 19f6722479f44098141d12671f19a684f2f2ad6a
-Author: David Brown <david.brown@pnl.gov>
-Date:   Wed Nov 28 14:48:45 2012 -0800
+commit f503ab255f4424db94ae58db2286c76b4165dd7e
+Merge: 033696b b067e36
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Nov 3 10:35:26 2012 -0400
 
-    here's an initial update script
+    Update last mod date
 
-commit 82cda7479776bb7f0a3c5c0bf68ba71f0f8cb204
-Author: dmlb2000 <david.brown@pnnl.gov>
-Date:   Wed Nov 28 14:41:17 2012 -0800
+commit b067e362585df20fbde3f1a7eb3c421c9d03b0ea
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Nov 3 10:29:54 2012 -0400
+
+    Final tweaks to merge with master
+
+commit a43ef3b95e27779061fda6d59ac706c98f472040
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 1 09:21:51 2012 -0400
+
+    change strict to parse
+
+commit 0d7c56913f990059df90f1dd1fb3e9eed2966aae
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Oct 26 11:36:24 2012 -0400
+
+    jQueryUI 1.9.1
+
+commit 1d78aaa2b4087cd20b19f47c617d4e59f12f0a35
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 15:10:31 2012 -0400
+
+    Fix example
+
+commit 522d0b4ed18370c929dc4f47e6468506d258d913
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 15:06:00 2012 -0400
+
+    Fix looseParse timezone
+
+commit b7aa216515b0bc4200daa6cdac16c86163e6990e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 14:55:52 2012 -0400
+
+    Strict time parsing
+
+commit 465c1ab37613beeca89d68a9bd11e58528d30c91
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 13:46:06 2012 -0400
+
+    update localizations - remove ampm, update timeFormat
+
+commit 1bb1b4fcefaa168fcef6283e93dd496e16260033
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 13:33:53 2012 -0400
+
+    Fix parsing with new HH format
+
+commit b0430eb84d0930573fe76d069117f94ce5957d06
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 12:56:17 2012 -0400
+
+    Remove ampm option from docs
+
+commit 17a2dce4b1197b60c9152039e476604f62241b69
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 11:25:15 2012 -0400
+
+    Remove code using ampm
+
+commit 2b527256efca08b08044c92f3c33d2f03be114d0
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 09:58:22 2012 -0400
+
+    Fix ampm bug in formatTime
+
+commit 4ee9097e99b053668377717a0a8f15844db04eae
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 09:43:27 2012 -0400
+
+    Adds pickerTimeFormat and pickerTimeSuffix options
+
+commit 19dfb8c996eebaea4f7f50e21a3329fb9acbc697
+Merge: bdd14b9 fc244f3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 25 05:21:13 2012 -0700
+
+    Merge pull request #492 from rocksolidwebdesign/dev
+    
+    12 hour format, force alt field to always be UTC
+
+commit fc244f36e50adc0db1311528d0e80b192caf47f2
+Author: Vaughn Draughon <vaughn@rocksolidwebdesign.com>
+Date:   Tue Oct 23 21:38:30 2012 -0600
+
+    Added 12 hour option to formatTime
+
+commit bdd14b9c6d152acf7f89e65611617f4e2ad91428
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 23 16:52:30 2012 -0400
+
+    Add altAmpm option
+
+commit fc34147cd5ddcb01e395462326c8ec8057176ff6
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 23 16:26:44 2012 -0400
+
+    nicolasconnault - Improve error logging
+
+commit 8a2a323cba9657e99c17f22cfca35858a75d7b1b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Oct 22 16:16:06 2012 -0400
+
+    Default events if not exist
+
+commit d31f500103ce562a03524329710ed16c94ac02e3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Oct 20 14:16:56 2012 -0400
+
+    Update last modified date
+
+commit ace1c0a98a9b37c810a5b2b1e21aa748a06975a0
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Oct 20 14:16:22 2012 -0400
+
+    Mrhanlon - sliderAccess fix
+
+commit a9defa12b5871e33a5670feb0a64a79239ba90d4
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 9 09:50:58 2012 -0400
+
+    Add custom controlType example
+
+commit 2f9ff08669126f7345fd4f2e13d45e01bac8303c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 9 08:06:50 2012 -0400
+
+    Add unit param to all control methods
+
+commit 6ea99b733e50f9fa69460105c4e1cf2be524702f
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 9 07:58:28 2012 -0400
+
+    Update jqueryui to 1.9
+
+commit e5ad3c3a9f67d5fdd981847c8bf7ab46b56eafed
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 9 07:56:54 2012 -0400
+
+    Version 1.1.0 dev
+
+commit 2384f979e177e6ae8a6cf935a5bda53b5aada595
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Oct 6 13:47:07 2012 -0400
+
+    New dev version
+
+commit 033696b0b6723dd24615ae109a3eb6f6154c8847
+Merge: 23a7a88 d57204c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Oct 6 13:42:17 2012 -0400
+
+    Fix merge conflict
+
+commit d57204c8a39a94d7b2e4c8a218d8c5325ac3ffea
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Oct 6 13:39:26 2012 -0400
+
+    New Version
+
+commit cd7789b176b9eab1caf7316a9a92ddd7df7a7a65
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 4 11:57:50 2012 -0400
+
+    Enable rtl for proper localizations
+
+commit 18456e6d20266a11f2df165acd613fb464c74e98
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 4 10:26:33 2012 -0400
+
+    ControlType description
+
+commit f547fa4c87c5ed3ba71cf04bcc11fee1e8ca1c24
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 4 10:16:11 2012 -0400
+
+    Control updates - can pass object to controlType
+
+commit 6e0c31ae904850c908797d2d2e807646cd830a79
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 4 08:44:33 2012 -0400
+
+    Fix neg substr bug
+
+commit 6129c1ce8d00dd199132aaceafab9039c1b4d4f7
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Oct 3 14:12:22 2012 -0400
+
+    Issue 465 - Bernosek, Fixes inconsistancy with quotes in timeFormat compared to dateFormat
+
+commit dddb3c3fd39c97c0519ac11f19b7ccf8f4f9533b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Oct 3 14:01:49 2012 -0400
+
+    Issue #466 - Bernosek, imporoves literal support
+
+commit f00868af4c6ce6e6f55e983d4cd0c1f779a973d8
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Oct 3 10:50:52 2012 -0400
+
+    RTL support
+
+commit a623c563b33191a5302db989e9e1faa554e92ce8
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 16:35:07 2012 -0400
+
+    Cleanup code
+
+commit 0c3e0169848b77ff2d3862c8d923a25ed858326d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 16:12:04 2012 -0400
+
+    Some testing
+
+commit f908d499dcdc042976dd14e5d446fddc403e9056
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 15:31:03 2012 -0400
+
+    Documentation update
+
+commit 038bfc2b942bf36e3a457576c130a900c9c9fe57
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 15:23:20 2012 -0400
+
+    Add control type for using select instead of slider
+
+commit f087709cb09f7f97d980466448ee894876912572
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 11:50:51 2012 -0400
+
+    Remove css from js comments
+
+commit 1cfb16062ab704409f65d90dafeb9920fe4c9098
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 10:11:18 2012 -0400
+
+    Condensed slider generation
+
+commit 0e0ef06cd252f1ff613fc71436a4b3c531288a34
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 09:57:36 2012 -0400
+
+    Rough RTL support
+
+commit 6e1b2c63a97796f3d0900a8fdeee738183d8921d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 09:26:15 2012 -0400
+
+    Update to Issue #453 when option timeOnly
+
+commit 40b1953e35d1df08648ce1268bc4350e1ddf085b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 08:24:23 2012 -0400
+
+    Issue #453 Fixes altField when using inline mode
+
+commit db02ae3f39f37b8d0f706b4f2ab2c24205bfaace
+Merge: 4c0680c 1610a90
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 2 05:03:32 2012 -0700
+
+    Merge pull request #464 from mcshaz/dev
+    
+    allow option
+
+commit 1610a90bfd81a188d4f7be40414d4b9de4adf69d
+Author: Brent McSharry <brentm@adhb.govt>
+Date:   Tue Oct 2 14:11:47 2012 +1300
+
+    allow option
+
+commit 4c0680cacfdef4a976d2895a4ac74d4f6bf8f6a5
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 29 14:55:28 2012 -0400
+
+    New dev version
+
+commit 23a7a882b7c3158b88a7f9e48313088f6e051fa5
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 29 14:41:42 2012 -0400
+
+    Update last updated date
+
+commit b83013394ff8f52b62e7615f1bb7acc04ac00a41
+Merge: d47cb6f 958f4e3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 29 14:39:22 2012 -0400
+
+    Merge branch 'dev'
+
+commit 958f4e341d442fada8ede7c0ec1e3a0db8fb4695
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 29 14:37:33 2012 -0400
+
+    Version ready for master merge
+
+commit 9e05accc9f35c48bce92101192389d3f97d3cbe9
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 29 14:29:24 2012 -0400
+
+    Fix defaulting timezone in formatting date
+
+commit 670983cb7f5dce97734cd911f3d7748309acac8b
+Merge: 20ec8cf b0b8458
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Sep 20 13:28:21 2012 -0700
+
+    Merge pull request #452 from NetForce1/patch-1
+    
+    fix splitDateTime for plain datepicker
+
+commit b0b8458e5763b85d83958c5dffb4bf9e1148dfe2
+Author: NetForce1 <d.dewit@gmail.com>
+Date:   Thu Sep 20 18:18:57 2012 +0300
+
+    parseDate fails when dateFormat contains separator
+    
+    When the dateFormat contains the separator that is used to split date and time, parseDate fails.
+    Also, since parseDate has no access to the instance, it does not know the correct timeFormat, so splitting is not always correct. 
+    Restoring the old hack of relying on datepickers error message seems to fix these issues.
+
+commit 7a6e5f04aa090109b39be47764ddd66edb43934d
+Author: NetForce1 <d.dewit@gmail.com>
+Date:   Thu Sep 20 11:55:15 2012 +0300
+
+    fix splitDateTime for plain datepicker
+    
+    When using a plain datepicker, getDate returns always the current date because splitDateTime puts the date in the time part of the result.
+    This change only splits when the input actually contains a time.
+
+commit 20ec8cf7cf1f703aa406b86a09a12862f0cf8a44
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Sep 18 14:14:54 2012 -0400
+
+    undo documentation testing
+
+commit 7e995848dfd00e3cc45c533a5be3d790d823fe56
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Sep 18 14:14:26 2012 -0400
+
+    Issue 441 - added better constraint to setting time from field
+
+commit df505b94e527fd5428196eac6709248966f25d8c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Sep 18 14:01:49 2012 -0400
+
+    Issue 440 - Simplify min/max constraints of _setTime
+
+commit d7537f8488437b632f7898420d3c346573537654
+Merge: 030cd2a e6038cc
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Sep 18 04:54:19 2012 -0700
+
+    Merge pull request #439 from tobiasbunyan/dev
+    
+    Fix splitDateTime function to work with IE7
+
+commit e6038cc326095b6b954d8fbe880432c4b9295011
+Author: LarryDavidJr <tobiasbunyan@hotmail.com>
+Date:   Tue Sep 18 11:41:00 2012 +0200
+
+    Fix splitDateTime function to work with IE7
+    
+    The syntax for the second part of the splice does not work in IE7 (possibly others I haven't checked).  Have changed to a zero start index without reversing the sign of the timePartsLen.  As splice removes elements from the array, this way makes more logical sense anyway.  Works in IE7, IE9 and chrome 21.0. 
+
+commit d47cb6f315598c80038f3e7d5f37e012be2ac6d8
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Sep 16 10:32:21 2012 -0400
+
+    Fix jsmin error
+
+commit 030cd2a30470c33fd4f45410ca0a8a8d893c3343
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Sep 16 10:30:03 2012 -0400
+
+    Fix jsmin error
+
+commit 7f919306307da72960142fbfb687751f0cd7d3fb
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 15 11:09:01 2012 -0400
+
+    Create new dev version
+
+commit 70e0ca6ef2a99e1cf61a026bd40e995f019ddb25
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 15 10:58:59 2012 -0400
+
+    New Version
+
+commit 4ecca3c80fef32c43fb85d09c26efb8422ad77d1
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 15 10:56:32 2012 -0400
+
+    Fix parse issue
+
+commit bb58ecfbf2be2f388dba73081a5212cf871d0bc3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 15 10:06:45 2012 -0400
+
+    Update docs
+
+commit df8d5139876e7d9df95207ffe70d1baad1825e68
+Merge: cbf20d2 b838a21
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 15 10:00:41 2012 -0400
+
+    Merge branch 'dev' of https://github.com/trentrichardson/jQuery-Timepicker-Addon into dev
+
+commit cbf20d21f797aa1c0c0f742fa850462945062de9
+Merge: 428a215 0abd583
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 15 09:57:12 2012 -0400
+
+    Merge branch 'master' of https://github.com/trentrichardson/jQuery-Timepicker-Addon into dev
+
+commit b838a211e32022f942b359c7835cd3fadb024759
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Sep 14 14:03:04 2012 -0400
+
+    Make initialization more DRY, improve splitting datetime
+
+commit 31dec57f61121e295d2e18aeff2dc58aa2fe247f
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Sep 13 15:18:42 2012 -0400
+
+    Fixes issue #287
+
+commit 8e43a0844ec2a7c773e30d57075e7f4718bae64b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Sep 13 11:31:21 2012 -0400
+
+    Fixes #432 - Improves parseDate()
+
+commit d8cd2dab3e9a4bf7e1e91f735ba21f376894066e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Sep 13 11:10:17 2012 -0400
+
+    Cleanup long lines
+
+commit b1a110fe8b50b671dffdd32472e1406f0a9951ca
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Sep 13 09:59:39 2012 -0400
+
+    Code Cleanup, fixes minify error
+
+commit 123d6e0e3c0745643c4f7a9c972c5c994096f26d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Sep 13 08:50:30 2012 -0400
+
+    Doc updates
+
+commit d00fb8cc9eaf401c9bc8217978b57caa48aca608
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Sep 13 08:34:36 2012 -0400
+
+    Fix timepicker only init requiring {}
+
+commit 428a215c8dd9da22e790fa35ccdfb20281a6d6bb
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 12 16:01:52 2012 -0400
+
+    Update doc styles
+
+commit 1b705f451d9dd74969edbe5d903fdca1b0c8db87
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 12 15:10:51 2012 -0400
+
+    Minor doc tweaks
+
+commit 5cc064a0e1f4ac05bdb975736fbcba3f69b74c9c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 12 15:01:03 2012 -0400
+
+    Update docs
+
+commit 7ac0b282172ecb638d733861d0ef8079f3a315c4
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 12 10:19:59 2012 -0400
+
+    Fix issue #413 - Conflict with mootools slider
+
+commit cfb29537bea1eb1f962bc8928d2de9968edf0148
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Sep 9 09:54:06 2012 -0400
+
+    Update readme
+
+commit 8e03223255586ac6ccd9ca42482662215df3920d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 8 11:07:55 2012 -0400
+
+    Create new dev version
+
+commit 0abd5831d8707eddc519ca4e1e6fcf8d8291bc0a
+Merge: 7b9ba9a 54547fb
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 8 11:05:38 2012 -0400
+
+    Merge branch 'dev'
+
+commit 54547fb2e8f6d1d417f60bfe80949b1565007f8a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 8 11:03:42 2012 -0400
+
+    Updated Version
+
+commit 1365738e981eadd59c6f99b21865577ea1aa9b78
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 8 10:57:15 2012 -0400
+
+    Add jqueryui requirements to docs
+
+commit c0908d6362e8ed74d1b3b6c1e58419d69c69f0db
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 8 10:52:00 2012 -0400
+
+    Some documentation updates
+
+commit fe455ffedd9e021000e7500468b919e884c9e395
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Sep 8 10:38:57 2012 -0400
+
+    Fix by alex3d, prevents overwriting _defaults
+
+commit 3a7d3d79345fa7fec749d8a1093faf1dce9b0613
+Merge: 6ff9b7a cd51fb3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Aug 30 11:53:50 2012 -0700
+
+    Merge pull request #424 from Zauberfisch/dev
+    
+    BUGFIX timeZoneString UTC & UTC+5.5
+
+commit cd51fb3768fcbfc893ef31c1f157ae6a29fe1bd7
+Author: Zauberfisch <admin@zauberfisch.at>
+Date:   Thu Aug 30 16:05:39 2012 +0200
+
+    API CHANGE: renamed timeZoneString
+    
+    Renamed timeZoneString to $.timepicker.timeZoneOffsetString to make it
+    public accessable
+
+commit c9f6831403eeae9ac429b8829905c7ed40ffa3b0
+Author: Zauberfisch <admin@zauberfisch.at>
+Date:   Thu Aug 30 12:08:13 2012 +0000
+
+    BUGFIX timeZoneString UTC & UTC+5.5
+    
+    timeZoneString returns '+0100' for UTC+1, but returned just '+' for UTC+0 when in fact it should return '+0000'
+    And returns a fully incorrect string for timezone offsets like UTC+5.5 or UTC+x.75
+    
+    timeZoneString now returns a consistent and correct string for UTC+x.25 UTC+x.50 UTC+x.75 and UTC+0
+
+commit 6ff9b7a7f60358d7bddedcddcc957f154c2a8fc6
+Merge: cad70fd 643a324
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Aug 29 06:50:04 2012 -0700
+
+    Merge pull request #423 from Zauberfisch/dev
+    
+    ENHANCEMENT: customizable alternative field
+
+commit 643a324a96d7537d2762a4b8c6e485a79a33ba99
+Author: Zauberfisch <admin@zauberfisch.at>
+Date:   Wed Aug 29 13:31:39 2012 +0000
+
+    ENHANCEMENT: customizable alternative field
+    
+    allow the alternative field to be populated with a fully customized date
+    time string.
+
+commit cad70fd48df4f7bab1bc32a2663e1da0f0fcf558
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Aug 28 13:19:17 2012 -0400
+
+    Add Ukrainian localization
+
+commit a5919e789b1e86abcab5f61aa5ad962a6f905b5d
+Merge: b930f5f 5597225
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Aug 28 09:57:24 2012 -0700
+
+    Merge pull request #421 from keithnicholson/dev
+    
+    Fixes #335
+
+commit b930f5fc6602370cd316c9666ed776b7d6eb130c
+Merge: b7c99d1 313cfe4
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Aug 28 09:52:24 2012 -0700
+
+    Merge pull request #422 from simonvwade/default-values
+    
+    Default values
+
+commit 313cfe4a282af376a3a8f8f033c365334bdbe9ba
+Author: Simon Wade <simon.wade@gmail.com>
+Date:   Wed Aug 29 02:13:39 2012 +1000
+
+    Changed to only set defaultValue on focus to allow user to unset the input value
+
+commit f2cfbcd65bda496d2963fddce896b7637c32e3a4
+Author: Simon Wade <simon.wade@gmail.com>
+Date:   Wed Aug 29 01:50:22 2012 +1000
+
+    Fixed trailing comma
+
+commit e66ac892aa54f6cc38e4b9adffc9d0ef255d127f
+Author: Simon Wade <simon.wade@gmail.com>
+Date:   Wed Aug 29 01:47:53 2012 +1000
+
+    - Added support for specifying a defaultValue that will be used when the text input fires a focus event and has an empty value
+    - Added support for providing separate options for the start and end inputs in the range methods using "start" and "end" properties in the options object
+
+commit 559722561fb3d2488c9e8e23e89e1e728549244e
+Author: keithnicholson <knicholson@ksdynamics.com>
+Date:   Tue Aug 28 10:50:00 2012 -0500
+
+    Fixes #335, allowing dynamic changes to properties
+    
+    _injectTimePicker HTML was getting data only from the default or initially provided value.
+    
+    Changed one line to accept the settings that have been extended at the datepicker level.
+
+commit b7c99d12ea6e35a17ebf6e80ab0ee1ca0a6fa40d
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Aug 28 10:47:17 2012 -0400
+
+    Fix reorg error
+
+commit 693c410260d717670a569f3056bf845dda0a3def
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Aug 28 10:38:43 2012 -0400
+
+    Reorganize code
+
+commit 3d71f857b4a6b84ca4bfe3d023eee8804e7dbd9d
+Merge: 1891b53 f321489
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Aug 28 07:27:43 2012 -0700
+
+    Merge pull request #412 from simonvwade/dev
+    
+    Added methods to enforce date range limits.
+
+commit f321489be3c8130518ec1bacf42199b109bd21e0
+Author: Simon Wade <simon.wade@gmail.com>
+Date:   Fri Aug 17 11:06:23 2012 +1000
+
+    Added methods to enforce date range limits.
+
+commit 1891b53e52822923e28a17c6831e0c4dc4815b99
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Aug 14 13:13:15 2012 -0400
+
+    Retract fix #86, causes undefined date error
+
+commit 0cc96c70dff095f72608b1c4360e6855d5d16c52
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Aug 10 09:04:47 2012 -0400
+
+    Fixes #86 - redraw calendar with given position
+
+commit 3de1c5e4a502996af096dd081bc817c5b9bcafd9
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Jul 26 09:24:31 2012 -0400
+
+    Fixes #391 - Selecting input populates the date when empty
+
+commit 8b95f20fecc87b63b543536b962dce5972f87e4f
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jul 25 14:40:35 2012 -0400
+
+    Bulgarian translation
+
+commit 8c229ad2c47a36533d525141a50aa4dfae5152b1
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jul 24 10:15:21 2012 -0400
+
+    Fixes ampm issue and parsing string literals, issues #383 and #394
+
+commit c685a069e86ab679230925aca237df67f6832a25
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jul 17 13:11:25 2012 -0400
+
+    evandroprogram update to portugese translation
+
+commit 3249fd2d2ac29c430a591d1124fa92e496c58784
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Jul 13 08:38:27 2012 -0400
+
+    Fix #389 minDate/maxDate issue
+
+commit 3e3dcda8aec3802a12dcb7d10d62134b3df63fb1
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jul 10 16:12:27 2012 -0400
+
+    remove old code
+
+commit 19e6e67bc3f29d314e212ed7e4eca62f125365cb
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jul 10 16:06:20 2012 -0400
+
+    Fixes Issue #385 - some timezones have 30 and 45 minute offsets
+
+commit d97c3a3e04091043e816a0ee5811bb3c51d4c541
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jul 10 13:51:00 2012 -0400
+
+    Fixes Issues #384 and #383
+
+commit a0302fa0ccb975851c0090e7eb1393cf16143dba
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jul 9 12:35:09 2012 -0400
+
+    Remove  id attributes from generated code
+
+commit 712daaca4f396c5010839d69e4bf21781411dd02
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jul 9 11:32:46 2012 -0400
+
+    Update example for start end time range
+
+commit 68fdec0e3dae3ebeac730c529135786a8b25246e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Jul 1 19:06:39 2012 -0400
+
+    Create new dev version 1.0.2
+
+commit 7b9ba9a5111fcb716c5eacafe922b6be484eae49
+Merge: 2050b7b c73678c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Jul 1 18:51:06 2012 -0400
+
+    Merge dev branch v1.0.1
+
+commit c73678c2374a61294f3cad568d327d02711b5106
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Jul 1 18:41:57 2012 -0400
+
+    Readme changes
+
+commit 53f3aa37a77972d23e2bf99998848f24eb69e125
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Jul 1 18:38:07 2012 -0400
+
+    Readme changes
+
+commit e33f4b4f99e581b618d5fcfb8699d524d70d26fc
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Jul 1 18:31:25 2012 -0400
+
+    Finalize version 1.0.1
+
+commit 96dee3343faa25a6d68dd4956b5504c3e4a53c92
+Merge: a64f781 ee59b4c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jun 27 05:03:46 2012 -0700
+
+    Merge pull request #380 from kdeng/dev
+    
+    fixed a bug. When the input field is empty, and the date picker will never update it with the newly selected value
+
+commit ee59b4cf98285704c779894df30e07f07b4f6079
+Author: kdeng <dkf_genius@hotmail.com>
+Date:   Wed Jun 27 12:33:04 2012 +1200
+
+    fixed a bug. When the input field is empty, and the date picker will never update it with the newly selected value
+
+commit a64f781d36a52224c47b98041bf2bfb3d20ac312
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jun 13 08:53:25 2012 -0400
+
+    Merge changes from Scott for setTime
+
+commit 9acbd5056adef2f33634abc9c2d8fdfe461dc93b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jun 12 08:44:09 2012 -0400
+
+    Add demo and sliderAccess to repo
+
+commit 2a23bb157efde9a2ca541dae27f65e18281555d6
+Merge: 787d4a5 9e9fef5
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jun 12 05:18:00 2012 -0700
+
+    Merge pull request #376 from DeonHeyns/dev
+    
+    Add Afrikaans translation by DeonHeyns
+
+commit 9e9fef56cc54e14f11f3890147b2578b520f983c
+Author: Deon Heyns <heynsd@gmail.com>
+Date:   Sun Jun 10 12:56:51 2012 -0300
+
+    Merge changes to dev branch
+
+commit 9a112d5981cbbf039d7717425e888f4f0a1f3a1e
+Author: Deon Heyns <heynsd@gmail.com>
+Date:   Sun Jun 10 12:55:29 2012 -0300
+
+    Added an Afrikaans translation
+    
+    Added the Afrikaans localization
+
+commit 787d4a514d633da286a7bd51e2c5671caf713954
+Merge: a9a4550 5fb7407
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue May 15 13:51:52 2012 -0700
+
+    Merge pull request #367 from ajgon/dev
+    
+    Just a quick fix to make this plugin JSLint compatible (correct branch)
+
+commit 5fb74078e265d0a8d5beed3daffb09a01dca2cc0
+Author: Igor Rzegocki <ajgon@irgon.com>
+Date:   Tue May 15 22:23:31 2012 +0200
+
+    Small fixes, to make JSLint complain less
+
+commit a9a4550d7faef089920f9f15f68ad0d6a31a091a
+Merge: 4584407 41e6a18
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Mar 26 06:53:03 2012 -0700
+
+    Merge pull request #350 from apepper/tz_autoselect
+    
+    Autoselect "local" timezone.
+
+commit 45844070b0c058421329f0831728637a38e11786
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Mar 26 09:51:05 2012 -0400
+
+    Update timezone even when showTimezone is false by kapouer
+
+commit 9ed4ffda882b704eb941754f81f09055ccbf223d
+Merge: be74879 50dd6d1
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Mar 26 06:48:57 2012 -0700
+
+    Merge pull request #347 from kapouer/patch-4
+    
+    Make sure useLocalTimezone variable actually works
+
+commit be74879535e50817876b3643213e509666f4c268
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Mar 26 09:46:46 2012 -0400
+
+    Strict fixes by codeactual
+
+commit 41e6a18637737292a694469ae8cd9a449f06159f
+Author: Alexander Pepper <alexander.pepper@infopark.de>
+Date:   Mon Mar 26 14:33:53 2012 +0200
+
+    If the timezone of the given date matches the local timezone, use local timezone.
+    
+    * This switches the timezone automatically, when changing the date to a (non) daylight saving time.
+
+commit d6cc2ce254329145a3896417dfa20340f43c7a75
+Author: Alexander Pepper <alexander.pepper@infopark.de>
+Date:   Mon Mar 26 14:31:04 2012 +0200
+
+    Refactored internals to calculate the timeZoneString.
+
+commit 50dd6d1dde9243a4ebc8fd1ab8e5d3795e3f5e66
+Author: Lal Jérémy <kapouer@melix.org>
+Date:   Sun Mar 25 13:05:16 2012 +0300
+
+    Fix usage of _defaults.useLocalTimezone
+
+commit e657640331cb7e99febd247e68eb4f046f7d3a40
+Merge: 64ada98 22e6f87
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Mar 23 08:07:48 2012 -0700
+
+    Merge pull request #346 from kapouer/patch-3
+    
+    Fix : Input date is not selected
+
+commit 64ada98d71ae988a7dbf269a5f8b0ffae1a17569
+Merge: d28b5db ab26e51
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Mar 23 08:05:01 2012 -0700
+
+    Merge pull request #343 from apepper/timezone_default
+    
+    Use defaultTimezone, when a time is already set.
+
+commit ab26e51171d923e94a4d021bc4336d9bff078cd5
+Author: Alexander Pepper <alexander.pepper@infopark.de>
+Date:   Fri Mar 23 13:17:51 2012 +0100
+
+    Check local timezone again, when changing the date (e.g. daylight savings).
+    
+    * Only do this, when using the localTimezone.
+
+commit 22e6f8794aa819154cdb951cac3828ee1a3a3c24
+Author: Lal Jérémy <kapouer@melix.org>
+Date:   Fri Mar 23 11:35:09 2012 +0100
+
+    Wrong parameter names - fix date not being set to selected
+
+commit 437882798551a7d79c2b0b980470780d6189e9e4
+Author: Alexander Pepper <alexander.pepper@infopark.de>
+Date:   Fri Mar 23 10:13:20 2012 +0100
+
+    Use defaultTimezone, when a time is already set.
+    
+    * New config field 'defaulTimezone'.
+
+commit d28b5db6c00dfbb66e785145e6a687b120e5a066
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Mar 22 08:27:55 2012 -0400
+
+    Set timezone to default by kapouer
+
+commit 480135aa32bdeb2a42a2a7bea44e3e73531e8103
+Merge: ea30cab 313e55d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Mar 22 05:16:20 2012 -0700
+
+    Merge pull request #338 from apepper/autoselect_current_timezone
+    
+    Pick the current timezone of the browser by default.
+
+commit ea30cab7c7ac31338a18060ad52a0d74b82cd815
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Mar 22 08:15:37 2012 -0400
+
+    revert change
+
+commit 3b33871c1f877bcfc99d0be1429357952ec89d6b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Mar 22 08:11:00 2012 -0400
+
+    Default timezone by kapouer
+
+commit d04b8bdb095c7803e0eb59e335cacfeb501a934a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Mar 20 14:29:21 2012 -0400
+
+    Update license
+
+commit 313e55d76a668a8faa6741fad97e0a996b553069
+Author: Alexander Pepper <alexander.pepper@infopark.de>
+Date:   Tue Mar 20 17:53:39 2012 +0100
+
+    Pick the current timezone of the browser by default.
+
+commit 704c0b9d33d4f8a675f3802a63fddcb3f9186f90
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Mar 16 14:12:31 2012 -0400
+
+    fix formatting
+
+commit ca698f389f782927122144b8a4e3070ed78ec1aa
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Mar 16 14:11:14 2012 -0400
+
+    Fix time only issue within _parseTime
+
+commit 5302e3e876f6c9fbba2b7c1c2121a4056c2ea690
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Mar 15 10:38:31 2012 -0400
+
+    Fix missing comma by Ximik
+
+commit e0cdb188e57c667490bf8fb3d6ce0e33c220483c
+Merge: a446965 0e00e8b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Mar 7 13:46:46 2012 -0800
+
+    Merge pull request #332 from aparshin/parseDateTime
+    
+    Add $.datepicker.parseDateTime(), $.datepicker.parseTime() functions
+
+commit 0e00e8b2f554090d8db44d02fa9962c7c64c5778
+Author: Alexander Parshin <parshin.alexander@gmail.com>
+Date:   Thu Mar 8 00:59:10 2012 +0400
+
+    Minor refactoring after code review
+
+commit 8929e4a76f820f5f5cf78a16741039dfb3c40c5d
+Merge: e7c7d40 a446965
+Author: Alexander Parshin <parshin.alexander@gmail.com>
+Date:   Thu Mar 8 00:28:20 2012 +0400
+
+    Merge remote-tracking branch 'remotes/trent/dev' into parseDateTime
+
+commit e7c7d4024db3e331003db105036667702c8e4bd8
+Author: Alexander Parshin <parshin.alexander@gmail.com>
+Date:   Mon Mar 5 23:50:44 2012 +0400
+
+    Add $.datepicker.parseDateTime(), $.datepicker.parseTime() functions
+
+commit a446965faf7388c12a8a82c2037ab30d1bb74be9
+Merge: d33d08f 06b9afe
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Feb 29 06:36:59 2012 -0800
+
+    Merge pull request #328 from jun66j5/dev
+    
+    Fixed typo for iso8601
+
+commit d33d08f27748fb7e46aa1edee4e7d644e04dafeb
+Merge: 562d346 610129e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Feb 29 06:32:05 2012 -0800
+
+    Merge pull request #327 from aparshin/dev
+    
+    Fixed errors when call public methods from input without datepicker instance
+
+commit 06b9afec8cf9fe1491a7693c3db16d78c1273d22
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Wed Feb 29 22:45:04 2012 +0900
+
+    Fixed typo for iso8601
+
+commit 610129e662dfe81c33fe34eeab4d32a3e1220591
+Author: Alexander Parshin <parshin@scanex.ru>
+Date:   Wed Feb 29 10:17:01 2012 +0400
+
+    No errors when call public methods from input without datepicker instance
+
+commit 562d346b3668335a8ee76c452d101b12065d832d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Feb 28 14:50:28 2012 -0500
+
+    1.0.1-dev
+
+commit 2050b7b6a1baad681b868828e3ec83589f5e304c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Feb 28 14:48:23 2012 -0500
+
+    Update Version
+
+commit 4e02851e52dd3aad01cca4fe38e060b0d7f74504
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Feb 28 14:42:08 2012 -0500
+
+    Fix global o variable
+
+commit 9c10031fba72bce6846ada18e1226695551baa92
+Merge: 5eb5402 caea8b1
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Feb 28 11:35:10 2012 -0800
+
+    Merge pull request #325 from rossj/dev
+    
+    Merge pull request by rossj
+
+commit caea8b1d17d7b0866e9f3382415d5153d1e122ce
+Author: Ross Johnson <ross@mazira.com>
+Date:   Tue Feb 28 13:19:28 2012 -0600
+
+    Fixed clobbering of global variable 'o'
+
+commit ba9f293995d7662e131873fb483dc3ad84681893
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Feb 28 14:09:03 2012 -0500
+
+    Prevent RangeError - Pull Request 324
+
+commit 978cc0cb98d25a3d3d1b0d36fb2da17332f33b48
+Merge: 9b57a88 e795b3e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Feb 15 05:06:39 2012 -0800
+
+    Merge pull request #318 from sarxos/dev
+    
+    Remove unused variables, fix validation warnings
+
+commit e795b3e7a6f08b64bacaecd42ce3f36e0ab18da3
+Author: Bartosz Firyn <bartosz.firyn@alcatel-lucent.com>
+Date:   Wed Feb 15 12:54:09 2012 +0100
+
+    Remove unused variables, fix validation warnings
+
+commit 9b57a88e8c2bb70f9991ede77bddc971e9817655
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Feb 11 17:44:20 2012 -0500
+
+    Update dev version
+
+commit 5eb540282f067674361aa810ed013e48554acdfd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Feb 11 17:34:50 2012 -0500
+
+    Ready for deployment
+
+commit 19fa33319ac3a1e00f96d69cfe84a0fff73abc69
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Feb 7 11:03:50 2012 -0500
+
+    he fix by erann3
+
+commit e9ac8bf8cf817ee9b3096684c21fa1fa6bdc0b00
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Feb 7 10:56:46 2012 -0500
+
+    Korean by Genie
+
+commit 27a426e3eb77a6178afc4f7edfb91e6937eaed95
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Feb 7 10:52:19 2012 -0500
+
+    Create public $.datepicker.formatTime method
+
+commit e2faad1db277de70b7017b373ebc7b9003496fcf
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Mon Jan 30 15:49:09 2012 -0500
+
+    Trim formatted time for when ampm=false and tt in format
+
+commit 547e6adde3a81880833e243df95a0bf2642da3bc
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Mon Jan 30 15:32:35 2012 -0500
+
+    timeFormat tt h:mm not parsed fix by clear00
+
+commit fc2531ff86b5d2e270f062f847c7a804ea85f12f
+Merge: 1b96a3f 0a68b5c
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Wed Jan 18 07:49:32 2012 -0500
+
+    Merge branch 'master' of github.com:trentrichardson/jQuery-Timepicker-Addon into dev
+
+commit 1b96a3f1d2c5bd4d389cd1455a1fca4ae3486fa5
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Wed Jan 11 11:38:28 2012 -0500
+
+    Fix more semicolons
+
+commit f1e4a47170245886051eecacadda1a362e889e31
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Wed Jan 11 11:34:44 2012 -0500
+
+    Fix semicolons
+
+commit 4853a89b9dd86fe711b6308c6db77af6d86efce1
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Dec 27 15:18:26 2011 -0500
+
+    Fix beforeShow to return value - by kunalkumar
+
+commit 26776afeb2568ea1a930b3d7d30141015c28aa57
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Mon Dec 19 10:12:49 2011 -0500
+
+    Update Russian translation by Sanek
+
+commit 1a1526287a0ee88484f32cdb4d28172fce0c9cf9
+Merge: 3ac151f 8e45662
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Dec 15 08:27:25 2011 -0800
+
+    Merge pull request #284 from RichardBradley/dev
+    
+    Fix error parsing date when setting option defaultDate
+
+commit 8e456626c740cf8d3f36d81acbdc97cbbd1e6e7d
+Author: Richard Bradley <Richard.Bradley@softwire.com>
+Date:   Thu Dec 15 15:30:22 2011 +0000
+
+    bug fix - swallowing all date parsing errors breaks the datepicker option "defaultDate" on relative values like "-18y"
+
+commit 3ac151fe8c6b96c112b274bc096f2ace4b63cc7e
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Wed Dec 14 08:13:01 2011 -0500
+
+    Check for tp_inst in gotoToday
+
+commit 0ec258f82be98443890bda084d5587a220e4a1bd
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Dec 6 10:57:13 2011 -0500
+
+    Added Norwegian translation
+
+commit 9af6f920e8341ab36b68bd1548887c1535595e78
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Dec 4 11:28:14 2011 -0500
+
+    Fix option setter
+
+commit 0a68b5c5dc7ff2975686a3d4c1b6260e70d60641
+Merge: ac38588 21bcc3c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Dec 4 08:24:43 2011 -0800
+
+    Merge pull request #278 from tomaswindsor/patch-1
+    
+    Fixes option setter override so it doesn't break option getter.
+
+commit 21bcc3c07b1926630f125ad715b75868695abdf2
+Author: Tomáš Windsor <windsor@seznam.cz>
+Date:   Sun Dec 4 16:02:41 2011 +0100
+
+    Fixes option setter override so it doesn't break option getter.
+
+commit dc15bf6bc5e0ae0ae37e45831cb3369b1e718d55
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Dec 4 09:48:06 2011 -0500
+
+    sliderAccess tweak
+
+commit ac38588138c1c91b766a48a9c97f1f8dae0ca450
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Dec 4 09:45:23 2011 -0500
+
+    sliderAccess tweak
+
+commit 9963f68ad5a9e0f1193e4c8f92e99a11ccaea1e9
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Dec 3 15:26:14 2011 -0500
+
+    Create new dev version
+
+commit cc45f6a6d85efdfa0b51e1868425ae0a0d47f0bb
+Merge: fc06b3f ff6596d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Dec 3 15:23:22 2011 -0500
+
+    Merge branch 'master' of github.com:trentrichardson/jQuery-Timepicker-Addon
+
+commit fc06b3fb2c1da50c11c1dd5fc5b5dc50bb283f23
+Merge: fae432b 8c86270
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Dec 3 15:10:50 2011 -0500
+
+    Update Version
+
+commit 8c862700ca03b46f5b5c7b2c946722ecd9db0409
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Dec 3 15:08:43 2011 -0500
+
+    Prepare version update
+
+commit f7eafa98494a0c2642b6a44313f4975ce0407021
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Fri Dec 2 13:44:58 2011 -0500
+
+    Adj grids only when slideAccess visible
+
+commit fab4a4428a3f31e710bafc05acb217ca5f6008fb
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Fri Dec 2 12:19:41 2011 -0500
+
+    Fix decimals results
+
+commit f9a9344e67777e20b4892f4ed532dff792b156be
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Fri Dec 2 12:07:15 2011 -0500
+
+    Fix grids with sliderAccess
+
+commit f4ace0510806086485e5e66354039c12b239097f
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Fri Dec 2 11:05:04 2011 -0500
+
+    Add sliderAccess integration
+
+commit 9a19d875eebd8af4ff7d40e1ea6dcb1110c8729b
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Thu Dec 1 14:17:48 2011 -0500
+
+    refactor markup generation; add change event
+
+commit 97e6641ed84863c30a40b0434472afc00b8365f1
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Wed Nov 23 11:36:51 2011 -0500
+
+    Update Turkish translation by Goktug Ozturk
+
+commit 5b1a9af999f0edf043c36d945372d1c714235661
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Nov 1 09:05:01 2011 -0400
+
+    Added Swedish localization by Nevon
+
+commit f1b0f2cb1fbd660e2ca45e1643996c8b60118c81
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Fri Oct 21 09:11:47 2011 -0400
+
+    Add translation by lalaships
+
+commit c75ff1c40cfe8c82fad6d358c2e54f853cf4edf9
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Oct 18 10:08:49 2011 -0400
+
+    Fixes issue 254, 261 _updateDateTime
+
+commit 73adb692d0f054ef62b5adb007d167c0add56c9b
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Oct 18 09:00:10 2011 -0400
+
+    Simplified Chinese by Will-Lu
+
+commit 5ee53c21b1193f612f30c0cff3e97370bd045141
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Tue Oct 18 08:53:32 2011 -0400
+
+    Fix daylight savings by mliberato
+
+commit fc29bd727735f71d06fe4acb5fcd1dd75ec054e4
+Merge: cc2b4dd 20b0c08
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 18 05:42:21 2011 -0700
+
+    Merge pull request #259 from inerdia/dev
+    
+    Finished the Slovak localisation in the dev branch
+
+commit cc2b4dd91d5d12aab98ede6c8cac07073ad2be64
+Merge: e14e636 52d21bd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Oct 18 05:40:57 2011 -0700
+
+    Merge pull request #262 from davidbarral/dev
+    
+    Added Galician translation
+
+commit 52d21bd0fdaa5671813f66f973dafbcce1bd4639
+Author: David Barral <david.barral@trabesoluciones.com>
+Date:   Tue Oct 18 13:38:34 2011 +0200
+
+    Added Galician translation
+
+commit 20b0c0845feb6c87d622683b580f6b32552cdba8
+Author: David Vallner <david@vallner.net>
+Date:   Thu Oct 13 01:47:44 2011 +0200
+
+    Fix Slovak localisation and add AM/PM markers
+
+commit ff6596d67350e3e2c1a124efabb4808a98c3a6e5
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Mon Oct 3 16:50:41 2011 -0400
+
+    Fix localization
+
+commit e14e6366985becd6e9250d5357684d81bd5f525e
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Mon Oct 3 16:48:07 2011 -0400
+
+    Fix localization
+
+commit fae432b17d899fe67f101662478a1ddcb5c428bd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Oct 2 09:52:31 2011 -0400
+
+    Updated Last Mod Date
+
+commit 4106d5e3b6cf26945e680ab3d832927272b7492a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Oct 2 09:51:22 2011 -0400
+
+    Create new dev version
+
+commit 9448760924ef6535ed5f88076e2285efd9b28889
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Oct 2 09:45:01 2011 -0400
+
+    Change version
+
+commit be01e84c247ad0362e35809b54712ac94063eb2f
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Oct 2 09:27:42 2011 -0400
+
+    Updated css in js file
+
+commit 680c0255f681f7b54f218171753d8ef15c5928e3
+Merge: 7d63691 ed10d06
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Oct 2 06:23:40 2011 -0700
+
+    Merge pull request #249 from novoj/dev
+    
+    Issue when combining stepHours and minHour / maxHour
+
+commit 7d63691052bc8b04fdb7a90940d74defa5518853
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Oct 2 09:15:41 2011 -0400
+
+    Added Slovak translation
+
+commit ed10d0650e8bd181ddff6d67da6969d4fbda0aaa
+Author: Ing. Jan Novotný <novoj@jnonb.(none)>
+Date:   Mon Sep 26 22:10:14 2011 +0200
+
+    Issue when specifying stepHour/stepMinute/stepSecond along with min and max limits. Modulo was computed in relation with midnight instead of min limit. Error usecase:
+    
+    $('#example1').datetimepicker({
+                        stepHour: 4,
+                        hourMin: 9,
+                        hourMax: 18
+                    });
+    
+    Would make steps 9-13-16 instead of 9-13-17.
+
+commit 5cf74480afc33a4e210bcb855379234612ef5adc
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Fri Sep 9 11:04:02 2011 -0400
+
+    Added Brazilian Portuguese translation
+
+commit ab8e05fbdbfb010dbdce20ab86be9ff95f9d022d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Aug 20 07:38:58 2011 -0400
+
+    Added Portuguese translation by luanlmd
+
+commit a390d9c5cc5ea635afd25317c76e89132da3152a
+Merge: b30cc8d 412212c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Aug 19 13:54:12 2011 -0700
+
+    Merge pull request #232 from jun66j5/l10n-ampm
+    
+    Support localized AM/PM markers
+
+commit 412212c6b6d446903ea47d39b716a023a586527c
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Fri Aug 19 21:06:36 2011 +0900
+
+    Adds `amNames`/`pmNames` for Finnish translation.
+
+commit b61c3a4c5518f8a4b55d8e62ca18f9b27ae62f11
+Merge: 399d980 b30cc8d
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Fri Aug 19 21:04:41 2011 +0900
+
+    Merge remote-tracking branch 'trentrichardson/dev' into l10n-ampm
+
+commit b30cc8d9b3be79a1a5f57c28291470f78ae05482
+Author: Trent <trentdrichardson@gmail.com>
+Date:   Thu Aug 18 15:42:33 2011 -0400
+
+    Added Finnish translation by paazmaya
+
+commit 399d980f4ebe45495c3b8d9f2f6e28eb8cf75e74
+Merge: 95ee51e 67386ec
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Mon Aug 15 23:04:57 2011 +0900
+
+    Merge remote-tracking branch 'trentrichardson/dev' into l10n-ampm
+
+commit 67386ec72663fc34cd81e39dee9e92870927d663
+Merge: 00a2cad 897bea1
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Aug 15 05:15:06 2011 -0700
+
+    Merge pull request #228 from jun66j5/iso8601-tz
+    
+    Support timezone designators in iso8601
+
+commit 95ee51ea2400d8a30b61adce05b0288652235ec7
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Mon Aug 15 15:59:30 2011 +0900
+
+    Add `amNames`/`pmNames` for Polish translation.
+
+commit 97990e9657967b13a00bf7b1afa238fff9d78f61
+Merge: 195be63 00a2cad
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Mon Aug 15 15:52:36 2011 +0900
+
+    Merge remote-tracking branch 'trentrichardson/dev' into l10n-ampm
+
+commit 00a2cad13b541086bb5ce1bc53772e00ef16ba27
+Merge: 8507859 7eae959
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Aug 14 17:58:19 2011 -0700
+
+    Merge pull request #230 from Cyb0org/dev
+    
+    Dev - New Polish translation
+
+commit 7eae959879f482f8750902b3d5af3620f48ba430
+Author: Michał Pena <cyb.org@cyb.org.pl>
+Date:   Sun Aug 14 21:51:28 2011 +0200
+
+    Added Polish translation by Michał Pena
+
+commit 897bea1bbe10b19db5437968eb85b998c1397d6f
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Fri Aug 12 22:58:04 2011 +0900
+
+    Fixed "Now" button with iso8601.
+
+commit ceabba803d465059bc7de267737bec03492387c1
+Merge: 6737b60 8507859
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Fri Aug 12 22:51:24 2011 +0900
+
+    Merge remote-tracking branch 'trentrichardson/dev' into iso8601-tz
+
+commit 195be63853a6be20fb50054ece23f738e0b93a3e
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Fri Aug 12 22:07:10 2011 +0900
+
+    Allow to input characters of localized AM/PM markers.
+
+commit 9ee65b2428feb5223d080bb11a9a55fd1f92588e
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Fri Aug 12 22:03:18 2011 +0900
+
+    Fixed broken locale-js for 'he'.
+
+commit 8507859312748e39f84f609a61d7894718ca6db0
+Merge: 04efa58 b7293ca
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Aug 12 05:43:04 2011 -0700
+
+    Merge pull request #225 from jun66j5/dev
+    
+    Now button should set the current timezone.
+
+commit b7293ca2a566dc57555307e3816a1b583a53ee2e
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Fri Aug 12 19:09:22 2011 +0900
+
+    When `showTimezone` is true, "Now" button sets the current timezone.
+
+commit 5ab6e7bc7dd22b4c5704c6c4eb1af498a0627241
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Thu Aug 11 15:55:47 2011 +0900
+
+    Now button sets the current timezone.
+
+commit cb98a45fd62af5cef705af58246f2db61a3fa0cf
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Thu Aug 11 14:43:48 2011 +0900
+
+    Support localized AM/PM markers.
+
+commit 6737b60eee2ac9d2b698c62a2bf036a5af183c00
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Tue Aug 9 21:25:08 2011 +0900
+
+    Support timezone designators in iso8601.
+
+commit 04efa5859c47725c9547b2825c248a102fa64e5b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Jul 28 17:58:52 2011 -0400
+
+    Add Romanian translation by myscienceisbetter
+
+commit 76dd5494cdc13efea8bd11d1ad59ed2f9decdf80
+Merge: 00b190a fe5327c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jul 26 11:12:53 2011 -0700
+
+    Merge pull request #216 from jun66j5/translation-ja
+    
+    Adding Japanese translations
+
+commit fe5327c6eff18c6f2c9453c5e9a2905b136d8909
+Author: Jun Omae <jun66j5@gmail.com>
+Date:   Wed Jul 27 01:55:51 2011 +0900
+
+    Added Japanese translations
+
+commit 00b190aa482ded406d6b7fd4bf537944750877dd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jul 25 07:14:51 2011 -0400
+
+    Force type int of grid options
+
+commit 9fa3845513253a8f286d3330e29e17272482ae3e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Jul 24 16:13:16 2011 -0400
+
+    Fix gotoToday button click
+
+commit 05baee46259ea32084122dc8975b325cf1b4d0b5
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun Jul 24 10:07:00 2011 -0400
+
+    Updated translations to include Milliseconds. Please update if you see bad translations!
+
+commit a161235e977129f8cb9ad1f16a1ee4a51be15d4f
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Jul 23 11:10:54 2011 -0400
+
+    Added millisecond functionality by Beakersoft
+
+commit 083efb98d54c7695f304776b5df069f503afee1a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Jul 23 09:35:00 2011 -0400
+
+    Added Hebrew localization
+
+commit c7ff0ccd31842d5f6db343b6d88fc1cf2e2ab677
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Jul 23 09:28:10 2011 -0400
+
+    Added Catalan localization
+
+commit 4d9a8c45b576ebf253df9a8abe4efdde2694edaf
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jul 20 08:08:16 2011 -0400
+
+    Create 0.9.7-dev
+
+commit 4496926c00b6b2caebfa93603bdcaff438294c19
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jul 20 07:59:55 2011 -0400
+
+    A couple changes for options and new jquery ui
+
+commit 76544647a51e17a4c4b9e86082b486fc4e1825ee
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jul 20 07:27:44 2011 -0400
+
+    added Greek and Turkish translations
+
+commit 05f3db74f246c2c37d6c8c40957e283c495d44b8
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Jul 16 15:18:53 2011 -0400
+
+    Added Estonian translation by Karls
+
+commit b53bf326f4fa34f57bf2cbedf488065b9dc36026
+Merge: 13106ee ced3ab3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Jul 1 08:27:52 2011 -0700
+
+    Merge pull request #191 from TigerDX/dev
+    
+    Reset styles for grid label tables when global table styles are in use
+
+commit ced3ab3f494c7170f65fd7a123f07501c1844bc7
+Author: Ben Murden <got.ben@gmail.com>
+Date:   Fri Jul 1 01:21:21 2011 -0700
+
+    Add style definitions for resetting grid label table
+
+commit 17c18ac6c208376506fca7d67e6c4d5de67c9226
+Author: Ben Murden <got.ben@gmail.com>
+Date:   Fri Jul 1 01:17:42 2011 -0700
+
+    Add classes to label grid tables
+
+commit 13106ee4ee4fd056a2ce271001c0d9ac74b51d2a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Jun 30 17:59:47 2011 -0400
+
+    Added Italian translation by logicoder
+
+commit ae64213f33d52c787e125609c243bbd7caf693dd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jun 22 06:34:40 2011 -0400
+
+    apply fix by alexandergitter for setTime to work
+
+commit 0595fd749bef322642e75110da77274d58cb7f21
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu Jun 16 18:33:41 2011 -0400
+
+    Added Vietnamese translation by Nguyen Dinh Trung
+
+commit 2362c6cf39626ffc4346fe779585759ddea71e2f
+Merge: f80d8c1 d9da87b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Jun 16 06:06:09 2011 -0700
+
+    Merge pull request #179 from alexandergitter/dev
+    
+    Fixed a couple of bugs
+
+commit d9da87bfb75597a2943e9e95858891169d3f2c25
+Author: Alexander Gitter <qwertz1230@googlemail.com>
+Date:   Sat Jun 11 22:13:54 2011 +0200
+
+    Don't open another date/timepicker when there's already one showing.
+    (Partially) fixes #28, #56 and #101
+
+commit 2e9005b2e8da1372dfce09470c12573ce371cd85
+Author: Alexander Gitter <qwertz1230@googlemail.com>
+Date:   Sat Jun 11 13:30:19 2011 +0200
+
+    Use actual min/maxDateTime values which might have been set via
+    $(...).datetimepicker.('option', 'min/maxDateTime' ...)
+
+commit b61905a515c8b1a285b608a531a1bf8ec66535a4
+Author: Alexander Gitter <qwertz1230@googlemail.com>
+Date:   Sat Jun 11 12:36:00 2011 +0200
+
+    Allow keyboard input of timezone specific characters if
+    showTimezone == true
+
+commit 2be272b34eb8a6dd5d71f00857a89f363402366b
+Author: Alexander Gitter <qwertz1230@googlemail.com>
+Date:   Sat Jun 11 12:16:13 2011 +0200
+
+    Fix issue #135, time was set to NaN in some rare cases
+
+commit 607577cefaeffc3729e8e336e3f761bcfc61f634
+Author: Alexander Gitter <qwertz1230@googlemail.com>
+Date:   Sat Jun 11 06:12:13 2011 +0200
+
+    Fix issue #161, don't parse hourGrid labels as octal numbers
+
+commit daa38f5ef3e3dc583a04ca881203e9988124e171
+Author: Alexander Gitter <qwertz1230@googlemail.com>
+Date:   Sat Jun 11 05:49:56 2011 +0200
+
+    Fix issue #177, keyboard input not working when datepicker wants us to
+    accept all characters
+
+commit f80d8c124d3697f7dd0384b1593d6eb738936428
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Wed Jun 8 17:40:43 2011 -0400
+
+    Add fix by alexandergitter to fix grid numbering
+
+commit b930a6a87d838b9e5229791a28374a12fc67af0d
+Merge: 2e45f5c 7c4aab0
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jun 8 08:26:34 2011 -0700
+
+    Merge pull request #175 from alexandergitter/dev
+    
+    Fix issue #149, sliders max values should not allow for partial steps
+
+commit 2e45f5c352ee0b35cdbaf7600ac21ec3effc59ad
+Merge: fc8769a 61a31f8
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jun 7 08:49:25 2011 -0700
+
+    Merge pull request #174 from ianare/dev
+    
+    Minor fix to FR, add ES translation
+
+commit 61a31f82a4bc4c08fe5bb13bcf56f93e526a3810
+Author: Ianaré Sévi <ianare@gmail.com>
+Date:   Tue Jun 7 16:39:07 2011 +0200
+
+    add spanish translation
+
+commit 0ac0d510efcf5a21aa7f9853355c9e764d6fcc80
+Author: ianare <ianare@gmail.com>
+Date:   Tue Jun 7 06:50:32 2011 -0700
+
+    Fix comments, set time format to French standard.
+
+commit fc8769abfb554b9ac38fefc3077675ff2fe22da9
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Mon Jun 6 18:41:59 2011 -0400
+
+    Fix portability
+
+commit 7c4aab0419688d3cee6ab2cd14eb1ed19ba67bab
+Author: Alexander Gitter <qwertz1230@googlemail.com>
+Date:   Fri Jun 3 23:25:35 2011 +0200
+
+    Fix #149, sliders max values should not allow for partial steps
+
+commit d4187fbde90a13b1e5972cdba4906c29edb24cba
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Mon May 30 21:14:38 2011 -0400
+
+    Added Indonesian localization by nmutiara
+
+commit 2aa96ed0440dd99669965b2f4e07904e130aa3ed
+Merge: 30f54c8 1a50d4f
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon May 30 18:10:34 2011 -0700
+
+    Merge pull request #167 from alexandergitter/dev
+    
+    Add new regional setting timeSuffix
+
+commit 1a50d4f402a988e188e87cbad2d6fc72180ea62c
+Author: Alexander Gitter <qwertz1230@googlemail.com>
+Date:   Sun May 29 14:09:20 2011 +0200
+
+    Add new regional setting 'timeSuffix'.
+    
+    Some languages commonly add some kind of suffix or phrase after the
+    time. This cannot be placed into timeFormat as it potentially contains
+    the letters h, t or other strings which are used for formatting.
+
+commit 30f54c8e8aeff429666727d28688682128952efc
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sat May 28 10:26:42 2011 -0400
+
+    Added Lithuanian localization by Irmantas
+
+commit 66a0e56253465478fc93a4fc9e4ae85d22637ca7
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Wed May 25 06:43:25 2011 -0400
+
+    Updated README
+
+commit 119cdf4a5ff8e21f322c0d005083a249a4ff36c1
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Wed May 25 06:39:22 2011 -0400
+
+    Update README
+
+commit d4b48eae166f9be206553643a420a208687e3cf8
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Wed May 25 06:33:58 2011 -0400
+
+    Update version
+
+commit 5ebb54b0e320b2c2f27f50b243286247853a3802
+Merge: f9fee45 e3c179d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue May 24 10:41:02 2011 -0700
+
+    Merge pull request #162 from bistory/dev
+    
+    Added French translation
+
+commit e3c179dca188f3f300d566a94cff1af886cc6ed7
+Author: Thomas Lété <bistory@gmail.com>
+Date:   Tue May 24 19:10:51 2011 +0200
+
+    Updated the credits
+
+commit 9f038770cdc25b14936bd0f32a8bd49083de16c2
+Author: Thomas Lété <bistory@gmail.com>
+Date:   Tue May 24 19:02:33 2011 +0200
+
+    Added French translation
+
+commit edb130d17fa2a638aec4abdb28e03c9e31cb0755
+Merge: eff83d0 3abfdc4
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue May 24 08:06:26 2011 -0700
+
+    Merge pull request #160 from gvas/Hungarian-translation
+    
+    Hungarian translation for jQuery Timepicker Addon
+
+commit 3abfdc46a0443a906c2a0bcaf918f8ac57501b7d
+Author: Vas Gábor <gvas.munka@gmail.com>
+Date:   Tue May 24 16:52:45 2011 +0200
+
+    Added Hungarian translation.
+    
+    Signed-off-by: Vas Gábor <gvas.munka@gmail.com>
+
+commit eff83d0ab8912ae8719df04cd9dc4c4518edef5e
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Tue May 24 06:36:05 2011 -0400
+
+    fix getDate bug and consistency in localizations
+
+commit ba1d07e1545053b162960aac2b99b61aebaaf3bf
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sun May 22 08:45:41 2011 -0400
+
+    Added German translation by Marvin
+
+commit b11c5764593d228dccf9f726283241ce68ae5588
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sun May 22 08:39:46 2011 -0400
+
+    Added comments and timezone translation to Czech localization
+
+commit 84d399f7b8460538daf834ee3b89e3ab6837aae0
+Merge: 643f20f a4e9d83
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sun May 22 05:35:45 2011 -0700
+
+    Merge pull request #155 from voda/localization
+    
+    added Czech localization
+
+commit 643f20f065634b13b682dfda3111b50b57be6faf
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sun May 22 08:32:10 2011 -0400
+
+    Updated comments
+
+commit a4e9d837993246b5c488a7447063d23c4ba256d7
+Author: Ondřej Vodáček <ondrej.vodacek@gmail.com>
+Date:   Fri May 20 10:06:30 2011 +0200
+
+    added Czech localization
+
+commit 97fd6eb419ea49a0c82dfe3dfeb33c64bd4c2bf3
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu May 19 20:05:34 2011 -0400
+
+    Fixed missing semicolons
+
+commit 8c6977388d9b7b234b7f91687323192809ccc094
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu May 19 19:56:13 2011 -0400
+
+    updated css margin per vanderlee contribution
+
+commit c3e1143ce9312146b59c00dd0168297284d565a9
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu May 19 19:53:38 2011 -0400
+
+    Added localizations for Dutch and Russian
+
+commit 8cbc6dc869a8e7fbe6040ae0cd0bbd18a6888c83
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu May 19 19:44:39 2011 -0400
+
+    Added ThomasLangston pull request from master for different case am/pm
+
+commit 3649e6a830dbb6b4ddab73966944cdfe679f3ad2
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu May 12 13:36:37 2011 -0400
+
+    Create new dev version
+
+commit f9fee45d7b858d2f883f47bd418318a70c29ccc5
+Merge: ec1a143 faf5a19
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu May 12 13:33:47 2011 -0400
+
+    Update version
+
+commit faf5a193bef21cba4901e717fb69e87f2d6fa18a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu May 12 13:31:22 2011 -0400
+
+    Update Date
+
+commit bc76b1cfcf90d3b3488d40cfb55b3f8504e77929
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu May 12 13:30:16 2011 -0400
+
+    Update version
+
+commit b36097718a71c54dbe766cd3ddae72ba77c4fc14
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Apr 18 09:52:06 2011 -0400
+
+    Add fix by jduff for inline display
+
+commit c9be5b72e7e748088e9e450cdeae8b99e4b070b2
+Author: root <matthias.althaus matthias.althaus@iserv.eu>
+Date:   Fri Apr 15 13:12:38 2011 +0200
+
+    Cleaing some whitespace
+    Fixing show/hide time for calendar use case
+
+commit 4bca74de364099376a8225833e5cba020073fc9b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Mar 23 08:48:57 2011 -0400
+
+    Revision of limit min/maxdatetime by voda
+
+commit cc80af42fe1ca6555c489c937929a49bba6a5468
+Author: Bruno Harbulot <bruno@distributedmatter.net>
+Date:   Sun Mar 13 20:27:16 2011 +0000
+
+    Preventing setting defaultDate on an empty input to set an (incorrect) input value.
+
+commit caf2916169b2db635007604641b682d9979e121e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Mar 11 09:41:39 2011 -0500
+
+    Escape special chars as separator (fix by elzoiddy)
+
+commit 1a2a371deb914b43cbed118b3b6c60535d5c2753
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Mar 8 13:21:00 2011 -0500
+
+    set function scope of this; pull request by janhartigan
+
+commit 960b7750e119af68c3b74a7d7801f952e2747223
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Mar 2 11:38:16 2011 -0500
+
+    update last mod date
+
+commit 44e3322469eb314b7bf43a1f7d0d1bad4416b34d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Mar 2 11:36:54 2011 -0500
+
+    Update and cleanup
+
+commit b23b6076fbf29dee16e876e8afb7e444eb070225
+Merge: c8f81ed 33ca84c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Mar 2 11:28:00 2011 -0500
+
+    Merge timezone additions
+
+commit c8f81ed7a86146c5c4bcf376ec8837f3ae3340bf
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Mar 2 11:07:34 2011 -0500
+
+    Add css file per vrana pull request
+
+commit 33ca84c9825f6bf4d74d6976588932504876d092
+Author: Bruno Harbulot <bruno@distributedmatter.net>
+Date:   Mon Feb 28 14:00:20 2011 +0000
+
+    Fix for default timezone if missing.
+
+commit da54680397156b375f9629d056571747f2dd0bbd
+Author: Bruno Harbulot <bruno@distributedmatter.net>
+Date:   Mon Feb 28 13:35:33 2011 +0000
+
+    Added example HTML page.
+
+commit 9c5de29f1befa4f5f43c79d13dd6151b89e3827f
+Author: Bruno Harbulot <bruno@distributedmatter.net>
+Date:   Mon Feb 28 12:18:46 2011 +0000
+
+    Added timezone selection.
+
+commit bebdba2b25737bc3b19467a8bbd63ead4b3cf330
+Merge: 1f57183 03d141a
+Author: kumm <kumm@webstar.hu>
+Date:   Sun Feb 6 18:53:52 2011 +0100
+
+    Merge remote branch 'upstream/dev' into dev
+
+commit 1f57183f820cc3c36595afa91af747e87f9fd378
+Author: kumm <kumm@webstar.hu>
+Date:   Sun Feb 6 18:53:31 2011 +0100
+
+    Refactor onSelect handler. Bind to grid onclick too.
+
+commit 03d141abb6a510f2cfd2e52fdbd6437d0091b08c
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sat Feb 5 11:30:23 2011 -0500
+
+    Updated version to 0.9.4 dev
+
+commit ec1a143b5c56578aab05d8975b3663fa9bcba72b
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sat Feb 5 11:24:49 2011 -0500
+
+    Updated last modified date and tag
+
+commit de54f7ed15c19bcc135cf0518b234940c010d473
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sat Feb 5 11:22:38 2011 -0500
+
+    Updated version from dev
+
+commit e5577fcc89e21842eef3192b7586bc800f3ecb94
+Merge: 72f763d 9efeb99
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sat Feb 5 11:17:40 2011 -0500
+
+    Merge branch 'dev'
+
+commit b2a1d9440a54d0e864160d9010d327f4cf7b41bf
+Author: kumm <kumm@mofli.(none)>
+Date:   Sun Jan 23 12:35:49 2011 +0100
+
+    fix default hour,minute,second by changing init order
+
+commit 9efeb990d2b91a45a5b31b1081d5a548e81f2970
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jan 19 16:26:46 2011 -0500
+
+    Fix bug where ampm is not displayed when first initiated
+
+commit 999803035f9af4e66d5dfe483be39d2a98d902b3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jan 19 16:01:33 2011 -0500
+
+    Add enable and disable feature by wallenium. Feature not yet stable but doesnt impact rest of plugin
+
+commit 5d05d23fa61cdbcd58cb70e717dcd02527752750
+Author: kumm <kumm@mofli.(none)>
+Date:   Mon Jan 17 22:25:27 2011 +0100
+
+    Support datepicker onSelect handler.
+
+commit 44fc32ab449a2a0575070821b0f28d2c3dfa9735
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jan 5 10:00:57 2011 -0500
+
+    Fix regex parsing with separator option
+
+commit faec5be2c69f304fbb64ce0a6699034a544c51bd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jan 5 09:43:38 2011 -0500
+
+    Added timepicker inst as parameter to relevant events
+
+commit 60ffcebe5c2baca7409f99ef484baa1154f9628e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jan 5 09:21:03 2011 -0500
+
+    Fix for altField option when using inline picker
+
+commit c1d7c5a106c59cbe9b7978fbc9d86a86fc791237
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jan 3 10:30:57 2011 -0500
+
+    Fix parsing error per issue 72
+
+commit 72f763dac5a0f99e2510049b50016f623e3c1a58
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Dec 30 10:25:32 2010 -0500
+
+    Quick Bug fix from dev
+
+commit a018a5611b65e00fd7a8d99f31f2db1ce8662448
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Dec 30 10:14:54 2010 -0500
+
+    Bug with parsing time by separator
+
+commit b7c14ce5f2efd42e8915b5f0ffd29d44d7f7a9b5
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Dec 28 14:08:00 2010 -0500
+
+    fix _onTimeChange to be more exact on if hour, minute, second exists.  Use !== false
+
+commit 9f9e50d5366bfaf9003f880faf631a3fade6b73b
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Mon Dec 27 11:11:35 2010 -0500
+
+    Updated dev version to 0.9.3-dev
+
+commit e5408d82ac2b60b1992b1b78cf9c6559efdf99c3
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Mon Dec 27 11:06:52 2010 -0500
+
+    Update Version
+
+commit 26803549917bd86d4427880a4ecf5a6d1f8a277f
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Mon Dec 27 11:03:51 2010 -0500
+
+    Fixed bug of min/maxDate option not an instanceof Date
+
+commit c00fa6d5daa2ccb6605ffb69c71ab5bb0a5d34ca
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Dec 22 10:36:27 2010 -0500
+
+    Fixed !!date issue and can use only minDate or minDateTime as options
+
+commit 895d27f1de75d2ece12cf3305b4081d990df8528
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Dec 22 09:29:49 2010 -0500
+
+    Added change by mikedeco in _onTimeChange. Assures that hour, minute, second is numeric
+
+commit 3d53741ca47060117230fe7baee272b70ec37c03
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Dec 20 08:39:11 2010 -0500
+
+    Add fix by doublerebel to determine ampm inside onTimeChnage
+
+commit c6f5819f138384c77276e54c00fefffc53c315e6
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Dec 17 10:58:58 2010 -0500
+
+    Add separator to allowed key press, clean up
+
+commit c851ceff764ff9ec7876d91e74af496648ffde00
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Dec 17 10:50:58 2010 -0500
+
+    Fixed altField, added altFieldTimeOnly for more customization
+
+commit b394ee84edf1fe484c63be6d7397b2577eaaa07a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Dec 17 09:07:11 2010 -0500
+
+    Added separator to formatted time output
+
+commit b4805d6dcc134b1d3eefcc0473a618bf62490ad6
+Merge: ee16a9a a8c575a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Dec 17 08:59:44 2010 -0500
+
+    Merge changes from Michael Simons for separator options
+
+commit ee16a9a1cab7f2b736dcb2ccae6c15121abdaabc
+Merge: aeaaca9 021967b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Dec 17 08:49:07 2010 -0500
+
+    Merge branch 'vorapoap-master' into dev
+
+commit a8c575a16304cf43f334b732118acb40df56a071
+Author: Michael J. Simons <michael@simons.ac>
+Date:   Thu Dec 16 22:33:53 2010 +0100
+
+    Added support for a date/time separator
+
+commit 021967bd29a1e663785bc7c9c9d928447655bd96
+Author: Vorapoap L. <vorapoap@hotmail.com>
+Date:   Thu Dec 16 09:48:25 2010 -0800
+
+    Fix so DateTime value is returned to the input field correctly.
+
+commit 35cdf9add98e5f862db27c3017307c138996193d
+Author: Vorapoap L. <vorapoap@hotmail.com>
+Date:   Thu Dec 16 09:31:15 2010 -0800
+
+    Fix so altField for timepicker mode also show time if altField is set
+
+commit 2ec0a4e02120ec2a4370867924b004a8ef58dd7c
+Author: Vorapoap L. <vorapoap@hotmail.com>
+Date:   Thu Dec 16 09:07:52 2010 -0800
+
+    Fix so altField(if set) show both Date and Time
+
+commit aeaaca9e1331b2bbdbd02c8937e38ce9db7423e0
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Dec 15 15:51:12 2010 -0500
+
+    Changed range check for minDateTime/maxDateTime
+
+commit 8e12e4577917d7746f1a9fae1496578daaf883ba
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Dec 15 10:47:36 2010 -0500
+
+    Added minDateTime and maxDateTime options, however must still supply minDate/maxDate for datepicker
+
+commit 2f96131641322a13bedfee9ca99cd039f97e2ba2
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Dec 14 09:06:26 2010 -0500
+
+    Tweaked how to call option methods
+
+commit 2084e23da91930a5e89b88576cf6f1859cb42986
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Dec 13 14:47:36 2010 -0500
+
+    Updated dev version
+
+commit a4796f192274bb456acf00b4af12963a47dc2cf9
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Dec 13 14:40:24 2010 -0500
+
+    Uncommented line from testing
+
+commit b129814e0f16f376c3e317827b632cac47afbc2a
+Merge: 077e416 f8cdfde
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Dec 13 14:36:59 2010 -0500
+
+    Merged changes by doublerebel, fixes get/setDate issues
+
+commit f8cdfdebb3d2518eb6d4c71c43cfe569ad975551
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Dec 13 14:32:22 2010 -0500
+
+    Fixed get/setDate when picker initiated with selector of multiple fields
+
+commit 077e41604406d01af7cb0934ab2edc892b3eaa45
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Dec 9 07:52:34 2010 -0500
+
+    Applied fix by monjudoh in _setDateDatepicker
+
+commit 678fa3524391d540fd08f3669a5757dc63eba92f
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Dec 8 11:52:52 2010 -0500
+
+    Fixed getDate for timepicker if not yet been opened
+
+commit a539339bc4b95582b8c7cac682c14683a6395166
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Dec 8 11:01:25 2010 -0500
+
+    Fixed datepicker only getDate
+
+commit 454af7bcf01d90212ccb7745bab1d6e7a0e2b4a8
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Dec 5 17:19:27 2010 -0800
+
+    Reset time to defaults when .datepicker('setTime') is called with no arguments
+
+commit f31d5ecbeb0801bb65003a34a74fb2cac74ab83f
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Dec 5 16:51:48 2010 -0800
+
+    Change timepicker initialization to support setting/getting time/date before date/timepicker has been opened
+
+commit aef1408c876440dbc00fe1abd18535bbc51e4493
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Dec 5 14:47:07 2010 -0800
+
+    Set datepicker date from field before returning date for getDate method (Fixes Issue 44)
+
+commit 3ca9079892ece2a1cdfe340c327a7d8cfe4fcd6a
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Dec 5 14:18:16 2010 -0800
+
+    Update text field when time is set with setDate or setTime methods (fixes bug I introduced in commit 496ee3a for _onTimeChange)
+
+commit 48620930ab3f5a19413685a391ec90e3e3ee14d2
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Dec 5 14:04:57 2010 -0800
+
+    Bugfix for correct timepicker injection
+    Prevents beforeShow from being called twice, which prevents injectTimepicker from being called twice
+
+commit 496ee3acfd580fece034a0cd3e8a420151d4e836
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Dec 5 13:59:22 2010 -0800
+
+    Bugfix for _onTimeChange to always format time and set timeDefined
+
+commit e97d06e554d07063b02cfe8edba5ddf4c89a9cfa
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Dec 5 13:54:32 2010 -0800
+
+    Bugfixes for _parseDate()
+
+commit 1f9e69c43c46e3b353f0834ac01fc3d0bf385672
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu Dec 2 07:25:33 2010 -0500
+
+    Changed version to dev
+
+commit 27815082b54ad7ec7e831cdbd7e3dbbf2b7e3fd8
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu Dec 2 07:23:40 2010 -0500
+
+    Updated Version
+
+commit c8681053eaaef05fd770fe4c57c162a6ae2c48c8
+Merge: d842aca 93d5982
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu Dec 2 07:14:12 2010 -0500
+
+    Merge branch 'dev' of github.com:trentrichardson/jQuery-Timepicker-Addon into dev
+
+commit d842aca5c09dd4714878fdcbeb943850fc9b8a27
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu Dec 2 07:13:20 2010 -0500
+
+    Updated Version
+
+commit 93d598238d75dec320f3140ae1e1458c8ea8fd82
+Merge: 21c03b3 3266d91
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Nov 30 14:47:45 2010 -0500
+
+    Merge branch 'DuctTapeMan-master' into dev
+
+commit 3266d91cd90e5c328c6a4684671dc3fc13d3e16b
+Author: David Boike <david.boike@gmail.com>
+Date:   Tue Nov 30 13:32:36 2010 -0600
+
+    Fixed an issue where a text field containing a time with hour 23 or minute 59 (the highest possible values) would cause the calendar date to reset to 1869 when the picker is displayed.
+
+commit 21c03b3477b2e80fa3b6db0a0d8c5e12a6095ed6
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Mon Nov 29 19:27:55 2010 -0500
+
+    Add dev branch
+
+commit 3d8b9dc19394d7d1477abf064b718f2c8836201b
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Mon Nov 29 19:12:06 2010 -0500
+
+    Updated Version
+
+commit 539ef8daf4a0ef7a2e272b144ea704c55cbfd3dd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Nov 29 08:45:54 2010 -0500
+
+    fixed setDate
+
+commit c0de1ae8e695a1981eed662f7d877599955b5631
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sat Nov 27 14:35:24 2010 -0500
+
+    Added closeText incase datepicker localization isnt given
+
+commit 05b49379427b3f32713b9718893e3cda538f2f91
+Merge: 3abd96f ee83b6f
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sat Nov 27 14:17:02 2010 -0500
+
+    Merge branch 'doublerebel-master'
+
+commit 3abd96f50b7095bbc55b1dbe945c45d7cbcf8cf8
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sat Nov 27 14:15:18 2010 -0500
+
+    Save changes
+
+commit ee83b6ffb7d5e01ace8244a00e40b20557a68474
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sat Nov 27 10:33:53 2010 -0800
+
+    Fix to apply regional settings from global defaults to new instance
+
+commit e5ab6d18861277893378a69bc41c8b1ad7a9b795
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Fri Nov 26 20:55:36 2010 -0500
+
+    Fixed number replacement in _formatTime
+
+commit c56e17047e2048ec7cb5cc119eafee78d10b3288
+Author: doublerebel <charles@doublerebel.com>
+Date:   Fri Nov 26 16:25:26 2010 -0800
+
+    Changed _formatTime method to optionally take arguments and return a formatted time string
+
+commit 749e97b72adbf50e8f30c1f1a863d90bb9f79be3
+Author: doublerebel <charles@doublerebel.com>
+Date:   Fri Nov 26 15:16:06 2010 -0800
+
+    Fix to prevent datetimepicker from closing when date is chosen (bug introduced in earlier commit)
+
+commit 4d6402ad9753f5347ef2429160049d54b2bbabf6
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Nov 21 16:02:11 2010 -0800
+
+    Minor whitespace fixes
+
+commit 689ba11c35e7e4bbff4d16199a5080e45f3f858b
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sun Nov 21 15:48:55 2010 -0800
+
+    Whitespace and getDate/setDate fixes
+    Extra tabs removed and line endings cleaned
+    getDate is now properly accessible from $(target).datepicker('getDate') and correctly returns date object with time
+    setDate is now properly accessible from $(target).datepicker('setDate') and can set both date and time
+    added new method setTime, accessible from $(target).datepicker('setTime')
+    calling .datepicker('setDate') with no date now sets the default date as in original datepicker code
+    time is set to default when calling .datepicker('setTime') with no time or calling 'setDate' with a date and no time
+    added new internal function _parseTime to parse string times from any source
+
+commit badcc050c44872d30d23a1fa5c8e3a75c0981f74
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sat Nov 20 18:46:20 2010 -0800
+
+    Fixed ampm constraint
+
+commit 425b957de02772824b97572cad37cc223dff8f6a
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sat Nov 20 17:40:24 2010 -0800
+
+    Check if ampm is enabled when constraining input
+
+commit 95a6ef2f4451a395ef6bf1df4f90e2f16dea811f
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sat Nov 20 17:24:03 2010 -0800
+
+    Changed _doKeyPress to limit input characters correctly
+    based on timeFormat + a space + dateFormat
+    (now restricts am/pm correctly based on timeFormat)
+
+commit ba7074fba1fe6f37ecfe378943ffc47511c6de64
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sat Nov 20 17:09:37 2010 -0800
+
+    Simplified keypress handling
+
+commit 25f8a6b46f467ae9e13e7a62fca2c33094d31eb9
+Author: doublerebel <charles@doublerebel.com>
+Date:   Sat Nov 20 16:33:56 2010 -0800
+
+    Fixed grid to start with minimum values (fixes Github Issue 38)
+
+commit 88a0b943bc2e72e5896b8bdae49263376ac089d6
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 16:58:02 2010 -0500
+
+    Corrected methods
+
+commit 5a598298de5a047331b0c4090cfbd36a1ec952e1
+Merge: 452e7e9 b35a403
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 16:15:17 2010 -0500
+
+    accept change
+
+commit b35a4032185f0811df810e0ea2dfd3b718a9c9bb
+Author: doublerebel <charles@doublerebel.com>
+Date:   Thu Nov 18 12:14:46 2010 -0800
+
+    Created _newInst fn to create 1 Timepicker per input when called on a jQuery collection
+    Fixed $buttonPanel typo
+    Consolidated .timepicker(), .datetimepicker() fns by using .apply()
+    Fixed == to === when comparing null and undefined in extendRemove fn (thanks JSLint!)
+
+commit 452e7e994a217f14f2078334f71204fc240d0b1c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 15:11:54 2010 -0500
+
+    Perm fix for daylight savings. The user is setting the time, its not programatically determined as in datepicker
+
+commit 6ab4dde85ee6343bac39a910d467be46559081c1
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 14:59:22 2010 -0500
+
+    temp fix for daylight savings
+
+commit babcbd5606ddb74d79ebaa4ec9f46279b0ab1e9c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 14:50:22 2010 -0500
+
+    updated readme
+
+commit 92f1508c68b45d377c71974081ecdc03aa0a4e6e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 14:45:26 2010 -0500
+
+    Fixed daylight savings bug i think
+
+commit e402be79828f4fdd2518d1d1bf0e23ce6040b585
+Author: doublerebel <charles@doublerebel.com>
+Date:   Thu Nov 18 11:21:46 2010 -0800
+
+    Whitespace and formatting corrections
+    Reuse jQuery obj for buttonPanel
+    var statement consolidation
+    Shortened default option code for $.fn.timepicker()
+
+commit 48f17b1f714586e7f5af903a0048d91de84af6ce
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 14:10:43 2010 -0500
+
+    fixed all pass through methods to datepicker
+
+commit 294b8cf850cf674b6db6d6c1303d4fda9f7328c4
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 14:05:06 2010 -0500
+
+    fixed getDate to return date
+
+commit ba3d8a86bd3dad2e1e2bc26dfceca175d374568d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 18 08:35:41 2010 -0500
+
+    Fixed timepicker() to work with no params passed
+
+commit ec7678e567fecd613849dc579defb5ceb5c64d9e
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Nov 16 11:35:30 2010 -0500
+
+    Fixed setting options, setDate
+
+commit 3a6666bb9e32b88a48efe1d370ee23cdfff72969
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Nov 16 10:31:46 2010 -0500
+
+    Fixed altField option
+
+commit ddc0a6af27353e60e8c4a6d0aef194fe8657bc9d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Nov 16 09:57:32 2010 -0500
+
+    Fixed no button panel for multi-month calendar
+
+commit e748c89061ac1ee2ca195274da83056b301d5b2d
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Mon Nov 15 19:25:24 2010 -0500
+
+    Saved Version change
+
+commit 60b5c67216da7e55259e049656c0b55542e7f7b9
+Author: doublerebel <charles@doublerebel.com>
+Date:   Mon Nov 15 13:57:09 2010 -0800
+
+    Change from mixed Functional and OO style to primarily OO-style
+    Changed syntax and coding style to better fit jQuery UI's practices
+    Reformatted line breaks, braces, and spacing for consistency
+    Renamed variables and functions for consistency, using _ to denote private vars/fns
+    Shortened variable declarations whenever possible
+    Improved efficiency of jQuery object calls
+    Now operates on jQuery collections instead of just single elements
+    Fixed incorrect parentheses in new _getDate fn
+    Various bugfixes and cleaning
+    JSLint-verified (braces are unnecessary for single-line statements where a semi-colon is used properly)
+    Provides exact same functionality but is over 2.6K smaller!
+
+commit 911956f5206cc5910f79d0d2605bde73decb88df
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Nov 15 14:33:48 2010 -0500
+
+    Fixed issue with dashes in input id
+
+commit ba5abba09910c13498c7b98efda89da77fcf49fd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Nov 15 14:25:18 2010 -0500
+
+    Fixed undefined dp_inst.lastVal
+
+commit b4c322c657aea1db12c260e9de60ae49dbc4d039
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sun Nov 14 22:41:47 2010 -0500
+
+    Tested bug fixes, incremented to version 0.8
+
+commit ee2821c91da150bed9e07fd525c508951f3b62b2
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sun Nov 14 22:19:01 2010 -0500
+
+    Polished timepicker if numberOfMonths > 1
+
+commit f1373940ebce3a4b88a01f542bc614235b00872f
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sun Nov 14 22:12:55 2010 -0500
+
+    Fixed if numberOfMonths is greater than 0
+
+commit 5d2f41ab57195a0ddef4b4fdd2ff99a74c4ea297
+Author: Joseph Huttner <jhuttner@alum.haverford.edu>
+Date:   Sun Nov 14 18:15:58 2010 -0500
+
+    'options' to 'option'.  I think this is a typo.
+
+commit 45985eebe0dd8148d87c5f79d6c572236ea944d9
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Nov 12 07:55:32 2010 -0500
+
+    default date if not set in _setDate
+
+commit 0c56593fb435077995962650645f4f1936577db7
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Nov 10 13:33:43 2010 -0500
+
+    Run though jslint to clean up
+
+commit 23f19b76c3f0a586625593ad19b4d16ec6323577
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Nov 10 07:46:13 2010 -0500
+
+    added refresh to _setDate before actually setting date
+
+commit d705098ff41145aee32d73380f7ccc7883760ec5
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Nov 9 07:48:43 2010 -0500
+
+    added _keyup event by TC
+
+commit da98d6c3a16e4658d2c67d1e69060de02e9bcfed
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Oct 27 12:53:30 2010 -0400
+
+    Fix bug in setDate, still doesnt set properly before picker is shown
+
+commit e5c7cfb6976ea47da5edefe2715b69a683479f45
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 21 08:32:23 2010 -0400
+
+    Added changes by Mikko for time grid and altField
+
+commit a9dff8466d1147d3b6260a09c0338af6f150e503
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 21 07:52:23 2010 -0400
+
+    Return jquery object at the end of initialization
+
+commit 66b95d8bdc3ef5780495a2d9d0e650ffa6fa49cf
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Oct 8 15:19:49 2010 -0400
+
+    integrated get/setDate functions from datepicker
+
+commit d15881eb3ca15ac4c97322199ca570a9af77d0c2
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Oct 8 11:32:41 2010 -0400
+
+    Update version
+
+commit 7d5c40f8052656e55f8ea05f66ccac003e00c671
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Oct 8 11:31:15 2010 -0400
+
+    Adjusted grid to start at Min options
+
+commit 990c283fd71b3d90015230b1485236af74171900
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Thu Oct 7 18:01:39 2010 -0400
+
+    increment version to 0.7
+
+commit 30fffefcff9c84067469786b2ca963c541ee20ce
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 7 11:43:51 2010 -0400
+
+    Adjust css
+
+commit f95b58c8854c5b9e8a11ac4fa401198ebf616741
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 7 11:36:38 2010 -0400
+
+    Adjust css
+
+commit 8a5c7a4161d89b6d98265aac6af9a635a5533d55
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 7 11:01:57 2010 -0400
+
+    Fixed syntax error preventing minify
+
+commit 94ea4392179822ad8b6172abdbb250635439e167
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 7 10:28:16 2010 -0400
+
+    Fixed altField implementation
+
+commit 6ae78e06be6a9860b4821652e152f22d46cc0ddf
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Oct 7 09:13:14 2010 -0400
+
+    Added time grid and altField by MK
+
+commit 43f319fa6c8ec7adae330d67b75ae405d832b27c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Oct 1 10:00:36 2010 -0400
+
+    fixed issue going from 11am to 12pm
+
+commit 6e55e5fc6a75fdde6b4a0b97561b6a6d8356ad4d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Oct 1 08:03:59 2010 -0400
+
+    fixed 12am display bug
+
+commit 0851f323a9763394a5934217d36c9301667fa8c5
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sun Sep 26 21:37:42 2010 -0400
+
+    fixed date format bug
+
+commit 675043dfd00b77e2cdca57b444df29c18731018a
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Sun Sep 26 21:15:07 2010 -0400
+
+    Added change event trigger by jblaster
+
+commit 2d641af90d8818139f535439d0b1afad96eeb055
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 22 14:59:29 2010 -0400
+
+    Now displays inline
+
+commit a06a031f69ba829b3c0caf8ae8c1edbf91172ede
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Sep 21 12:02:59 2010 -0400
+
+    Fixed issues to falling back to plain datepicker
+
+commit f49992774e7251c15a656bed394271c923599422
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Sep 21 10:41:10 2010 -0400
+
+    Fixed if input is cleared dont apply time
+
+commit 564348cd565faecf57bd32d0c6d2d48f46225880
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Sep 21 09:24:21 2010 -0400
+
+    Applied patches by vhostein, gave unique id (css changes to classes)
+
+commit a4f3cf111f1eecbc9c4198f240df603d6416efd6
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Sep 20 16:17:50 2010 -0400
+
+    Changed Today button to Now (localized) and Now button includes time
+
+commit 4f75af447cfde8f4726403b35a3b3f4a4654f9fa
+Merge: 984387b c4402c7
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Sep 20 16:15:36 2010 -0400
+
+    Merge branch 'master' of github.com:trentrichardson/jQuery-Timepicker-Addon
+
+commit 984387b0dbfc304446b63763d423a2c9f8417655
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Sep 20 16:07:24 2010 -0400
+
+    Changed timepicker Today localization to Now, now updates date and time on click
+
+commit c4402c7f04a9d7b97cc938eddf3d03b6cc42fe43
+Author: Trent <trsserver@trsserver.(none)>
+Date:   Wed Sep 15 22:25:33 2010 -0400
+
+    Corrected error calling datepicker dateFormat
+
+commit db4a4a8b10556173f6aa527c47fb45411a294533
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 15 14:11:51 2010 -0400
+
+    updated default localization
+
+commit 763bb27cf27ad76dde4e61eb3592597a3068d487
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 15 13:11:57 2010 -0400
+
+    Added localization default text
+
+commit 6f33592880281ffc5742cfa2eb2240400b1702d3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 15 11:54:21 2010 -0400
+
+    add min/max ranges for times
+
+commit bd5442de72faa17e85dc61a3119883a9b9086266
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 15 11:26:13 2010 -0400
+
+    apply reported getDate bug
+
+commit c9ff8007fd6c4433b92fdec637446a263f629635
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 15 10:15:50 2010 -0400
+
+    fixed regex to parse time and fixed timeOnly bug
+
+commit 1dd304b2f9599832a35b852587c1bc84c95d249a
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 15 09:42:39 2010 -0400
+
+    Removed unneeded commas breaking IE and updated to vhochstein localization contributions
+
+commit c9eb9eff5a494bf05831654e002f3f86b0d33d4c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 1 14:50:27 2010 -0400
+
+    Updated Last modified date
+
+commit 44a17de1126c7ab9d4e245fe5db2427817d28864
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Sep 1 14:48:13 2010 -0400
+
+    Updated from jozsika
+
+commit 62e19e68c4f6eb8715217b4369c43fe8d7631efc
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Jul 2 08:08:21 2010 -0400
+
+    added timepicker script
+
+commit 1bd63b366eefdf0f45d1c10bfbd2e9e4e54dc08a
+Author: Trent Richardson <trent@Trent-Richardsons-Mac-Pro.local>
+Date:   Fri Jul 2 07:50:41 2010 -0400
 
     first commit
