@@ -55,7 +55,7 @@ mkdir jquery-formwizard-$JQUERYFORMWIZARD; pushd jquery-formwizard-$JQUERYFORMWI
 rm -f jquery.formwizard-$JQUERYFORMWIZARD.zip
 
 popd
-sed 's/@VERSION@/'$VERSION'/g' myemsl-builddeps.spec.in myemsl-builddeps.spec
+sed 's/@VERSION@/'$VERSION'/g' myemsl-builddeps.spec.in > myemsl-builddeps.spec
 git add -A code
 git commit -a -m "Auto Update to $VERSION"
 git tag $VERSION
