@@ -21,7 +21,7 @@ echo "Nothing to Build"
 dir=$RPM_BUILD_ROOT/%{_prefix}/lib/myemsl/builddeps
 mkdir -p $dir
 rm -f myemsl-builddeps.spec
-cp -r * $dir/
+cp -r code/* $dir/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
