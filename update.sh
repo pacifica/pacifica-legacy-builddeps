@@ -50,8 +50,11 @@ popd
 rm -rf html5shiv/
 rm -f html5shiv.zip
 
-unzip -o jquery-ui-$JQUERYUI.custom.zip; mv jquery-ui-$JQUERYUI.custom jquery-ui
+unzip -o jquery-ui-$JQUERYUI.custom.zip
+rm -rf jquery-ui
+mv jquery-ui-$JQUERYUI.custom jquery-ui
 rm -f jquery-ui-$JQUERYUI.custom.zip
+rm -rf jquery.formwizard
 mkdir jquery.formwizard
 pushd jquery.formwizard
 unzip -o ../jquery.formwizard-$JQUERYFORMWIZARD.zip
