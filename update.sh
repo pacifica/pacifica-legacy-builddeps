@@ -5,7 +5,7 @@ JQUERYUI=1.9.2
 JQUERYFORMWIZARD=3.0.7
 QUNIT=1.10.0
 
-VERSION=015
+VERSION=016
 
 if git tag -l | grep -q $VERSION
 then
@@ -17,6 +17,7 @@ mkdir -p code
 pushd code
 wget -O jquery.min.js http://code.jquery.com/jquery-$JQUERY.min.js
 wget -O jquery.js http://code.jquery.com/jquery-$JQUERY.js
+wget http://jtemplates.tpython.com/jTemplates/jquery-jtemplates.js
 ../form-download.py -f jquery-ui-$JQUERYUI.custom.zip
 wget -O qunit.js http://code.jquery.com/qunit/qunit-$QUNIT.js
 wget -O qunit.css http://code.jquery.com/qunit/qunit-$QUNIT.css
@@ -57,8 +58,8 @@ unzip -o jquery-ui-$JQUERYUI.custom.zip
 rm -rf jquery-ui
 mv jquery-ui-$JQUERYUI.custom jquery-ui
 mv jquery-ui/js/jquery-$JQUERY.js jquery-ui/js/jquery.js
-mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.js jquery-ui/js/jquery-ui.custom.js
-mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.min.js jquery-ui/js/jquery-ui.custom.min.js
+mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.js jquery-ui/js/jquery-ui.js
+mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.min.js jquery-ui/js/jquery-ui.min.js
 rm -f jquery-ui-$JQUERYUI.custom.zip
 rm -rf jquery.formwizard
 mkdir jquery.formwizard
