@@ -1,3 +1,15 @@
+commit 0c866254ff8b9d3f7a83d9b09825dad60e37445b
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Thu Nov 29 19:51:24 2012 +0000
+
+    Fix modal hiding when using modal-in-modals
+
+commit 3ae6507a51355f92f7d64a4290ac057ea6102cc6
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Thu Nov 29 19:35:11 2012 +0000
+
+    Fixed mouse positioning when scrolling. Fixes #414
+
 commit d3816eed2564062e02fcfa42c55da1b0f47960df
 Author: Craig Michael Thompson <craig@craigsworks.com>
 Date:   Wed Nov 28 15:30:35 2012 +0000

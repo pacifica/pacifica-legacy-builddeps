@@ -5,7 +5,7 @@ JQUERYUI=1.9.2
 JQUERYFORMWIZARD=3.0.7
 QUNIT=1.10.0
 
-VERSION=014
+VERSION=015
 
 if git tag -l | grep -q $VERSION
 then
@@ -33,6 +33,9 @@ rm -rf JSON-js
 git clone https://github.com/douglascrockford/JSON-js
 wget -O jquery.timeago.js http://timeago.yarp.com/jquery.timeago.js
 wget https://github.com/aFarkas/html5shiv/zipball/master -O html5shiv.zip
+wget http://view.jqueryui.com/selectmenu/themes/base/jquery.ui.selectmenu.css
+wget http://view.jqueryui.com/selectmenu/ui/jquery.ui.selectmenu.js
+
 
 for x in r.js qTip2 jQuery-Timepicker-Addon JSON-js
 do
@@ -61,8 +64,8 @@ rm -rf jquery.formwizard
 mkdir jquery.formwizard
 pushd jquery.formwizard
 unzip -o ../jquery.formwizard-$JQUERYFORMWIZARD.zip
-mv thecodemine-formwizard-bccca47/* .
-rmdir thecodemine-formwizard-bccca47
+mv thecodemine-formwizard-*/* .
+rmdir thecodemine-formwizard-*
 popd
 rm -f jquery.formwizard-$JQUERYFORMWIZARD.zip
 
