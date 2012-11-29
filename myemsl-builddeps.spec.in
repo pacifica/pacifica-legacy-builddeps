@@ -4,7 +4,7 @@ Release: 1%{?dist}
 Summary: MyEMSL build time dependencies
 Group: System Environment/Base
 License: UNKNOWN
-Source: %{name}-%{version}.tar.bz2
+Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
