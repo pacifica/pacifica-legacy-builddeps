@@ -48,6 +48,7 @@ unzip -o ../html5shiv.zip
 mv */dist/* ..
 popd
 rm -rf html5shiv/
+rm -f html5shiv.zip
 
 unzip -o jquery-ui-$JQUERYUI.custom.zip; mv jquery-ui-$JQUERYUI.custom jquery-ui
 rm -f jquery-ui-$JQUERYUI.custom.zip
