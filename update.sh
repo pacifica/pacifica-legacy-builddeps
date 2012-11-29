@@ -1,11 +1,11 @@
 #!/bin/bash
 
 JQUERY=1.8.2
-JQUERYUI=1.9.1
+JQUERYUI=1.9.2
 JQUERYFORMWIZARD=3.0.5
 QUNIT=1.10.0
 
-VERSION=012
+VERSION=013
 
 if git tag -l | grep -q $VERSION
 then
