@@ -26,7 +26,7 @@ rm -rf qTip2
 git clone https://github.com/Craga89/qTip2.git
 rm -rf jQuery-Timepicker-Addon
 git clone https://github.com/trentrichardson/jQuery-Timepicker-Addon.git
-wget -O jquery.formwizard-$JQUERYFORMWIZARD.zip http://thecodemine.org/releases/jquery.formwizard-$JQUERYFORMWIZARD.zip
+wget -O jquery.formwizard-$JQUERYFORMWIZARD.zip https://github.com/thecodemine/formwizard/zipball/v3.0.7
 wget -O modernizr.js http://modernizr.com/downloads/modernizr.js
 wget -O almond.js https://raw.github.com/jrburke/almond/master/almond.js
 rm -rf JSON-js
