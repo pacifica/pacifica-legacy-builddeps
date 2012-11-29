@@ -52,7 +52,12 @@ rm -f html5shiv.zip
 
 unzip -o jquery-ui-$JQUERYUI.custom.zip; mv jquery-ui-$JQUERYUI.custom jquery-ui
 rm -f jquery-ui-$JQUERYUI.custom.zip
-mkdir jquery.formwizard; pushd jquery.formwizard ;unzip -o ../jquery.formwizard-$JQUERYFORMWIZARD.zip; popd
+mkdir jquery.formwizard
+pushd jquery.formwizard
+unzip -o ../jquery.formwizard-$JQUERYFORMWIZARD.zip
+mv thecodemine-formwizard-bccca47/* .
+rmdir thecodemine-formwizard-bccca47
+popd
 rm -f jquery.formwizard-$JQUERYFORMWIZARD.zip
 
 popd
