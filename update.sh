@@ -5,7 +5,7 @@ JQUERYUI=1.9.2
 JQUERYFORMWIZARD=3.0.7
 QUNIT=1.10.0
 
-VERSION=016
+VERSION=017
 
 if git tag -l | grep -q $VERSION
 then
@@ -17,7 +17,7 @@ mkdir -p code
 pushd code
 wget -O jquery.min.js http://code.jquery.com/jquery-$JQUERY.min.js
 wget -O jquery.js http://code.jquery.com/jquery-$JQUERY.js
-wget http://jtemplates.tpython.com/jTemplates/jquery-jtemplates.js
+wget -O jquery-jtemplates.js http://jtemplates.tpython.com/jTemplates/jquery-jtemplates.js
 ../form-download.py -f jquery-ui-$JQUERYUI.custom.zip
 wget -O qunit.js http://code.jquery.com/qunit/qunit-$QUNIT.js
 wget -O qunit.css http://code.jquery.com/qunit/qunit-$QUNIT.css
@@ -34,8 +34,8 @@ rm -rf JSON-js
 git clone https://github.com/douglascrockford/JSON-js
 wget -O jquery.timeago.js http://timeago.yarp.com/jquery.timeago.js
 wget https://github.com/aFarkas/html5shiv/zipball/master -O html5shiv.zip
-wget http://view.jqueryui.com/selectmenu/themes/base/jquery.ui.selectmenu.css
-wget http://view.jqueryui.com/selectmenu/ui/jquery.ui.selectmenu.js
+wget -O jquery.ui.selectmenu.css http://view.jqueryui.com/selectmenu/themes/base/jquery.ui.selectmenu.css
+wget -O jquery.ui.selectmenu.js http://view.jqueryui.com/selectmenu/ui/jquery.ui.selectmenu.js
 
 
 for x in r.js qTip2 jQuery-Timepicker-Addon JSON-js
@@ -60,6 +60,8 @@ mv jquery-ui-$JQUERYUI.custom jquery-ui
 mv jquery-ui/js/jquery-$JQUERY.js jquery-ui/js/jquery.js
 mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.js jquery-ui/js/jquery-ui.js
 mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.min.js jquery-ui/js/jquery-ui.min.js
+mv jquery-ui/css/ui-lightness/jquery-ui-$JQUERYUI.custom.min.css jquery-ui/css/ui-lightness/jquery-ui.min.css
+mv jquery-ui/css/ui-lightness/jquery-ui-$JQUERYUI.custom.css jquery-ui/css/ui-lightness/jquery-ui.css
 rm -f jquery-ui-$JQUERYUI.custom.zip
 rm -rf jquery.formwizard
 mkdir jquery.formwizard
