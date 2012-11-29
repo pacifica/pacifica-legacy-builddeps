@@ -53,9 +53,9 @@ rm -f html5shiv.zip
 unzip -o jquery-ui-$JQUERYUI.custom.zip
 rm -rf jquery-ui
 mv jquery-ui-$JQUERYUI.custom jquery-ui
-mv code/jquery-ui/js/jquery-$JQUERY.js code/jquery-ui/js/jquery.js
-mv code/jquery-ui/js/jquery-ui-$JQUERYUI.custom.js code/jquery-ui/js/jquery-ui.custom.js
-mv code/jquery-ui/js/jquery-ui-$JQUERYUI.custom.min.js code/jquery-ui/js/jquery-ui.custom.min.js
+mv jquery-ui/js/jquery-$JQUERY.js jquery-ui/js/jquery.js
+mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.js jquery-ui/js/jquery-ui.custom.js
+mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.min.js jquery-ui/js/jquery-ui.custom.min.js
 rm -f jquery-ui-$JQUERYUI.custom.zip
 rm -rf jquery.formwizard
 mkdir jquery.formwizard
