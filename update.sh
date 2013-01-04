@@ -5,7 +5,7 @@ JQUERYUI=1.9.2
 JQUERYFORMWIZARD=3.0.7
 QUNIT=1.10.0
 
-VERSION=017
+VERSION=018
 
 if git tag -l | grep -q $VERSION
 then
@@ -36,7 +36,9 @@ wget -O jquery.timeago.js http://timeago.yarp.com/jquery.timeago.js
 wget https://github.com/aFarkas/html5shiv/zipball/master -O html5shiv.zip
 wget -O jquery.ui.selectmenu.css http://view.jqueryui.com/selectmenu/themes/base/jquery.ui.selectmenu.css
 wget -O jquery.ui.selectmenu.js http://view.jqueryui.com/selectmenu/ui/jquery.ui.selectmenu.js
+git clone https://github.com/andrefigueira/json-formatter.git
 
+cp json-formatter/src/jaysun.1.0.js jaysun.js
 
 for x in r.js qTip2 jQuery-Timepicker-Addon JSON-js
 do
