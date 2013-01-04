@@ -1,6 +1,15 @@
-/*! qTip2 - Pretty powerful tooltips - v2.0.0pre - 2012-11-29
-* http://craigsworks.com/projects/qtip2/
-* Copyright (c) 2012 Craig Michael Thompson; Licensed MIT, GPL */
+/*!
+ * qTip2 - Pretty powerful tooltips - v2.0.1-4-g
+ * http://qtip2.com
+ *
+ * Copyright (c) 2013 Craig Michael Thompson
+ * Released under the MIT, GPL licenses
+ * http://jquery.org/license
+ *
+ * Date: Fri Jan 4 2013 04:05 GMT+0000
+ * Plugins: svg ajax tips modal viewport imagemap ie6
+ * Styles: basic css3
+ */
 
 /*jslint browser: true, onevar: true, undef: true, nomen: true, bitwise: true, regexp: true, newcap: true, immed: true, strict: true */
 /*global window: false, jQuery: false, console: false, define: false */
@@ -636,7 +645,7 @@ function QTip(target, options, id, attr)
 		}
 
 		// Adjust tooltip position on scroll of the window or viewport element if present
-		targets.window.bind('scroll'+namespace, repositionMethod);
+		targets.window.add(posOptions.container).bind('scroll'+namespace, repositionMethod);
 	}
 
 	function unassignEvents()
@@ -993,7 +1002,8 @@ function QTip(target, options, id, attr)
 
 				// Hide other tooltips if tooltip is solo
 				if(!!opts.solo) {
-					$(selector, opts.solo).not(tooltip).qtip('hide', $.Event('tooltipsolo'));
+					(typeof opts.solo === 'string' ? $(opts.solo) : $(selector, opts.solo))
+						.not(tooltip).not(opts.target).qtip('hide', $.Event('tooltipsolo'));
 				}
 			}
 			else {
@@ -1134,7 +1144,7 @@ function QTip(target, options, id, attr)
 				elemHeight = tooltip.outerHeight(FALSE),
 				targetWidth = 0,
 				targetHeight = 0,
-				fixed = tooltip.css('position') === 'fixed',
+				type = tooltip.css('position'),
 				viewport = posOptions.viewport,
 				position = { left: 0, top: 0 },
 				container = posOptions.container,
@@ -1159,11 +1169,12 @@ function QTip(target, options, id, attr)
 				event = MOUSE && MOUSE.pageX && (adjust.mouse || !event || !event.pageX) ? { pageX: MOUSE.pageX, pageY: MOUSE.pageY } :
 					(event && (event.type === 'resize' || event.type === 'scroll') ? cache.event :
 					event && event.pageX && event.type === 'mousemove' ? event :
-					!adjust.mouse && cache.origin && cache.origin.pageX && options.show.distance ? cache.origin :
+					(!adjust.mouse || options.show.distance) && cache.origin && cache.origin.pageX ? cache.origin :
 					event) || event || cache.event || MOUSE || {};
 
 				// Use event coordinates for position
-				position = { top: event.pageY, left: event.pageX };
+				if(type !== 'static') { position = container.offset(); }
+				position = { left: event.pageX - position.left, top: event.pageY - position.top };
 
 				// Scroll events are a pain, some browsers
 				if(adjust.mouse && isScroll) {
@@ -1226,7 +1237,7 @@ function QTip(target, options, id, attr)
 				// Adjust for position.fixed tooltips (and also iOS scroll bug in v3.2-4.0 & v4.3-4.3.2)
 				if((PLUGINS.iOS > 3.1 && PLUGINS.iOS < 4.1) || 
 					(PLUGINS.iOS >= 4.3 && PLUGINS.iOS < 4.33) || 
-					(!PLUGINS.iOS && fixed)
+					(!PLUGINS.iOS && type === 'fixed')
 				){
 					position.left -= win.scrollLeft();
 					position.top -= win.scrollTop();
@@ -1725,7 +1736,7 @@ if(!$.ui) {
 }
 
 // Set global qTip properties
-QTIP.version = '2.0.0pre-nightly-ab233bafce';
+QTIP.version = '2.0.1-4-g';
 QTIP.nextid = 0;
 QTIP.inactiveEvents = 'click dblclick mousedown mouseup mousemove mouseleave mouseenter'.split(' ');
 QTIP.zindex = 15000;
@@ -1835,8 +1846,6 @@ PLUGINS.svg = function(api, svg, corner, adjustMethod)
 		tPoint = point.matrixTransform(mtx);
 		result.position.left = tPoint.x;
 		result.position.top = tPoint.y;
-
-		console.log(result, point, tPoint);
 
 		// Adjust width and height
 		point.x += box.width;
@@ -2164,7 +2173,7 @@ function Tip(qTip, command)
 		// Viewport "shift" specific adjustments
 		if(shift.left = (horizontal === SHIFT && !!adjust.left)) {
 			if(newCorner.x === CENTER) {
-				css['margin-left'] = shift.x = offset['margin-left'] - adjust.left;
+				css['margin-left'] = shift.x = offset['margin-left'];
 			}
 			else {
 				props = offset.right !== undefined ?
@@ -2180,7 +2189,7 @@ function Tip(qTip, command)
 		}
 		if(shift.top = (vertical === SHIFT && !!adjust.top)) {
 			if(newCorner.y === CENTER) {
-				css['margin-top'] = shift.y = offset['margin-top'] - adjust.top;
+				css['margin-top'] = shift.y = offset['margin-top'];
 			}
 			else {
 				props = offset.bottom !== undefined ?
@@ -2842,8 +2851,6 @@ function Modal(api)
 				modals = $('[' + attr + ']').filter(':visible').not(tooltip),
 				zindex;
 
-				console.trace();
-
 			// Create our overlay if it isn't present already
 			if(!overlay) { overlay = self.create(); }
 
@@ -2926,7 +2933,7 @@ function Modal(api)
 				}
 
 				// Undelegate focus handler
-				docBody.undelegate('*', 'focusin'+namespace);
+				docBody.unbind('focusin'+namespace);
 			}
 
 			// Remove bound events

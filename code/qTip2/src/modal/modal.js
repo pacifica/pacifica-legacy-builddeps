@@ -193,8 +193,6 @@ function Modal(api)
 				modals = $('[' + attr + ']').filter(':visible').not(tooltip),
 				zindex;
 
-				console.trace();
-
 			// Create our overlay if it isn't present already
 			if(!overlay) { overlay = self.create(); }
 
@@ -277,7 +275,7 @@ function Modal(api)
 				}
 
 				// Undelegate focus handler
-				docBody.undelegate('*', 'focusin'+namespace);
+				docBody.unbind('focusin'+namespace);
 			}
 
 			// Remove bound events

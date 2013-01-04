@@ -1,3 +1,27 @@
+commit e742f9955347ef35125b431392f47a12932da67d
+Author: jrburke <jrburke@gmail.com>
+Date:   Fri Dec 21 20:54:59 2012 -0800
+
+    Fixes #245, local require calls in a define are now preserved with the namespace option.
+
+commit 679e66ae384db24f0a0980722aa4fc9a4b726159
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Dec 18 10:16:07 2012 -0800
+
+    Fixes #335, show that errors are returned via errbacks now.
+
+commit 2abda7e789c2688834a908129a33d8178547f73a
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Dec 5 13:49:41 2012 -0800
+
+    snapshot
+
+commit 5f33f7e790bc669e9dd2648c0c3b9ad3f9789d36
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Dec 5 13:49:12 2012 -0800
+
+    Fixes #328, do not put out confusing double defines for single file libs used with package config that name themselves.
+
 commit 4a7d2c2c276e262d3467b3d26489366149389ea8
 Author: jrburke <jrburke@gmail.com>
 Date:   Tue Nov 27 10:45:59 2012 -0800
