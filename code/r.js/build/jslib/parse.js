@@ -302,24 +302,25 @@ define(['./esprima'], function (esprima) {
      * Finds any config that is passed to requirejs. That includes calls to
      * require/requirejs.config(), as well as require({}, ...) and
      * requirejs({}, ...)
-     * @param {String} fileName
      * @param {String} fileContents
      *
-     * @returns {Object} a config object. Will be null if no config.
+     * @returns {Object} a config details object with the following properties:
+     * - config: {Object} the config object found. Can be undefined if no
+     * config found.
+     * - range: {Array} the start index and end index in the contents where
+     * the config was found. Can be undefined if no config found.
      * Can throw an error if the config in the file cannot be evaluated in
      * a build context to valid JavaScript.
      */
-    parse.findConfig = function (fileName, fileContents) {
+    parse.findConfig = function (fileContents) {
         /*jslint evil: true */
-        var jsConfig,
-            foundConfig = null,
+        var jsConfig, foundRange, foundConfig,
             astRoot = esprima.parse(fileContents, {
                 range: true
             });
 
         traverse(astRoot, function (node) {
             var arg,
-                c = node && node.callee,
                 requireType = parse.hasRequire(node);
 
             if (requireType && (requireType === 'require' ||
@@ -331,12 +332,14 @@ define(['./esprima'], function (esprima) {
 
                 if (arg && arg.type === 'ObjectExpression') {
                     jsConfig = parse.nodeToString(fileContents, arg);
+                    foundRange = arg.range;
                     return false;
                 }
             } else {
                 arg = parse.getRequireObjectLiteral(node);
                 if (arg) {
                     jsConfig = parse.nodeToString(fileContents, arg);
+                    foundRange = arg.range;
                     return false;
                 }
             }
@@ -346,7 +349,10 @@ define(['./esprima'], function (esprima) {
             foundConfig = eval('(' + jsConfig + ')');
         }
 
-        return foundConfig;
+        return {
+            config: foundConfig,
+            range: foundRange
+        };
     };
 
     /** Returns the node for the object literal assigned to require/requirejs,
@@ -421,7 +427,7 @@ define(['./esprima'], function (esprima) {
      * Finds only CJS dependencies, ones that are the form
      * require('stringLiteral')
      */
-    parse.findCjsDependencies = function (fileName, fileContents, options) {
+    parse.findCjsDependencies = function (fileName, fileContents) {
         var dependencies = [];
 
         traverse(esprima.parse(fileContents), function (node) {
@@ -511,7 +517,7 @@ define(['./esprima'], function (esprima) {
      * Determines if define(), require({}|[]) or requirejs was called in the
      * file. Also finds out if define() is declared and if define.amd is called.
      */
-    parse.usesAmdOrRequireJs = function (fileName, fileContents, options) {
+    parse.usesAmdOrRequireJs = function (fileName, fileContents) {
         var uses;
 
         traverse(esprima.parse(fileContents), function (node) {
@@ -551,7 +557,7 @@ define(['./esprima'], function (esprima) {
      * __dirname, __filename are used. So, not strictly traditional CommonJS,
      * also checks for Node variants.
      */
-    parse.usesCommonJs = function (fileName, fileContents, options) {
+    parse.usesCommonJs = function (fileName, fileContents) {
         var uses = null,
             assignsExports = false;
 
@@ -604,8 +610,6 @@ define(['./esprima'], function (esprima) {
 
 
     parse.findRequireDepNames = function (node, deps) {
-        var moduleName, i, n, call, args;
-
         traverse(node, function (node) {
             var arg;
 

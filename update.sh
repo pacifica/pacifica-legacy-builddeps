@@ -5,7 +5,7 @@ JQUERYUI=1.9.2
 JQUERYFORMWIZARD=3.0.7
 QUNIT=1.10.0
 
-VERSION=018
+VERSION=019
 
 if git tag -l | grep -q $VERSION
 then
@@ -15,6 +15,8 @@ fi
 
 mkdir -p code
 pushd code
+#http://www.splitbrain.org/projects/file_iconsA
+wget -O 'http://www.splitbrain.org/lib/exe/fetch.php?hash=92529a&media=http%3A%2F%2Fwww.splitbrain.org%2F_static%2Ffileicons.zip'
 wget -O jquery.min.js http://code.jquery.com/jquery-$JQUERY.min.js
 wget -O jquery.js http://code.jquery.com/jquery-$JQUERY.js
 wget -O jquery-jtemplates.js http://jtemplates.tpython.com/jTemplates/jquery-jtemplates.js
@@ -73,6 +75,7 @@ mv thecodemine-formwizard-*/* .
 rmdir thecodemine-formwizard-*
 popd
 rm -f jquery.formwizard-$JQUERYFORMWIZARD.zip
+unzip fileicons.zip
 
 popd
 sed 's/@VERSION@/'$VERSION'/g' myemsl-builddeps.spec.in > myemsl-builddeps.spec

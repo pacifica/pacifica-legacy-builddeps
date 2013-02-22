@@ -1,3 +1,456 @@
+commit e94144a330cf8374e69772bf0139b64fe1cadf29
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Feb 19 22:35:14 2013 -0800
+
+    snapshot
+
+commit ea11628b9fb296f018ad161e3226d486cd103154
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Feb 19 22:34:57 2013 -0800
+
+    Fixes #355, throw error on unresolved loading of dual mapped IDs.
+
+commit 0cffebf2a5f3d62f7544a6973caba7b586aafe8c
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Feb 19 16:21:56 2013 -0800
+
+    snapshot
+
+commit c2b2693e20a29615aca512d449ead32e383f0823
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Feb 19 16:21:38 2013 -0800
+
+    Fixes #371, allow @IMPORT for css inlining
+
+commit dd944255f591897a5e3990c17b6a2bc5871c004b
+Author: jrburke <jrburke@gmail.com>
+Date:   Sat Feb 16 23:33:22 2013 -0800
+
+    snapshot
+
+commit c2b4bd7873400216b76a26b3bd7a27598d4a0531
+Author: jrburke <jrburke@gmail.com>
+Date:   Sat Feb 16 23:27:54 2013 -0800
+
+    dedupe some xpconnect stuff.
+
+commit 01ccfb5086cd841459009c19ea865dea132207e2
+Author: jrburke <jrburke@gmail.com>
+Date:   Sat Feb 16 22:58:00 2013 -0800
+
+    all tests passing in xpcshell
+
+commit 23a96049b4e0f53b49ac5639ee67ffc4445e41f2
+Author: jrburke <jrburke@gmail.com>
+Date:   Sat Feb 16 22:19:39 2013 -0800
+
+    fixing unit test where xpconnect function.tostring output is different than node and rhino
+
+commit e0a465d749cb5efc9aec14beba80e670e53fec78
+Author: jrburke <jrburke@gmail.com>
+Date:   Sat Feb 16 22:06:42 2013 -0800
+
+    Getting closer. r.js now runs, and so do some of the tests. Have some test failures though.
+
+commit cf2425bf245e9426acfbc953dda8d2bdab8d20d8
+Author: jrburke <jrburke@gmail.com>
+Date:   Fri Feb 15 16:16:13 2013 -0800
+
+    Start of xpcshell adapters. r.js runs, but gets a weird error on a file operation
+
+commit 98ead89afaa601a4c4c7e37e967471703f89afea
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Feb 12 19:01:41 2013 -0800
+
+    Fixes #377, show[C global_defs for uglify2
+
+commit 3401eeee35d4fe750139efc2c128ac325abf9ccb
+Author: jrburke <jrburke@gmail.com>
+Date:   Fri Feb 8 10:18:48 2013 -0800
+
+    snapshot
+
+commit 57caabc8d7a0534f88b39f042bcd4eb4d42c92f8
+Merge: 408811b a80b3d0
+Author: James Burke <jrburke@gmail.com>
+Date:   Fri Feb 8 10:17:32 2013 -0800
+
+    Merge pull request #374 from oberhamsi/master
+    
+    rhino fix
+
+commit a80b3d0bd60deb40d37cbf18418e695fed450592
+Author: Simon Oberhammer <simon@nekapuzer.at>
+Date:   Thu Feb 7 14:24:16 2013 +0100
+
+    fix requirejsVars not defined in rhino
+    
+    without this I get an exception when trying to -convert although
+    all the unit tests run through
+
+commit 408811b6397e2328c7ac56240f38f02cd98ee18b
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Feb 5 11:07:25 2013 -0800
+
+    snapshot
+
+commit c467922fc7d4fe180b10fdbf7b92347df99fd70e
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Feb 5 11:05:46 2013 -0800
+
+    Fixes #372, do not fail on built ender files.
+
+commit 407959361850e858e7d967f4010dfc6c3a79cca2
+Author: jrburke <jrburke@gmail.com>
+Date:   Sun Feb 3 15:56:34 2013 -0800
+
+    Update test result based on text.js change
+
+commit 013c3d44666943299a3bad3c5b982b8c58de58b7
+Author: jrburke <jrburke@gmail.com>
+Date:   Thu Jan 31 12:32:12 2013 -0800
+
+    snapshot
+
+commit 24b878050d79439bbcd18c20b6925de29ff417da
+Merge: e114315 4fdd113
+Author: James Burke <jrburke@gmail.com>
+Date:   Thu Jan 31 12:31:01 2013 -0800
+
+    Merge pull request #367 from potif/upstream-issue-361
+    
+    Fixes #361, ensure build errors are propagated through to optimize errback
+
+commit 4fdd113996fcba6101a3ed774b8d4be3dfbe5188
+Author: Steve Lloyd <steve@sherpa.io>
+Date:   Thu Jan 31 11:08:21 2013 -0800
+
+    Fixes #361, ensure build errors are propagated through to optimize errback.
+
+commit e114315c6cdc71dba86ca78e895e6f58b1e22dbb
+Author: jrburke <jrburke@gmail.com>
+Date:   Thu Jan 31 00:03:18 2013 -0800
+
+    snapshot
+
+commit b056c4d9ac6931aca1a47972bef1b59abc1745a0
+Author: jrburke <jrburke@gmail.com>
+Date:   Thu Jan 31 00:02:54 2013 -0800
+
+    Fixes #366, multiple named modules triggered incorrect toTransport parsing.
+
+commit 04ee9ec8ce7a1561a81c2b21a9da4e5f599836f9
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 30 22:06:05 2013 -0800
+
+    snapshot
+
+commit 95b47de6b76447f5fd66007e051415939b1bffe1
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 30 22:05:22 2013 -0800
+
+    Fixes #365, allow uglify2 props on the command line.
+
+commit b6ac71d4d4c099c6e503883f4d5daf39ffd1d2f9
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 30 22:03:37 2013 -0800
+
+    Rev version for dev
+
+commit 6f673f439e1d0faaf59200f5e0dfac7e8757d0f9
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 30 21:19:19 2013 -0800
+
+    Test for #361, as suggested by @repeatingbeats
+
+commit d952c0a4a6b4a6de9c596f0ef058d81e36219275
+Merge: db16a44 1cca89e
+Author: James Burke <jrburke@gmail.com>
+Date:   Mon Jan 28 13:19:40 2013 -0800
+
+    Merge pull request #362 from nezasa/master
+    
+    document wait seconds in build.js example
+
+commit 1cca89ef4ad53a841d5021380bfc9e9e47c0565b
+Author: Patrick Hammer <patrick.hammer@nezasa.com>
+Date:   Fri Jan 25 12:25:14 2013 +0100
+
+    mention 'waitSeconds' in build.js example
+
+commit db16a4414986c029dc739b595ced981d62622c17
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 23 17:48:30 2013 -0800
+
+    Rev for 2.1.4 release
+
+commit e700eb7aeb101edcb9cb07b0f97ef0f4e5f1e0f8
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 23 17:31:31 2013 -0800
+
+    snapshot
+
+commit d73d7d58b75cdd470f554f6228c1dfc229248594
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 23 17:31:04 2013 -0800
+
+    Fixes #356, always do cssPrefix normalization
+
+commit 84eb9f1a7d519a2a9c3a9c7b008f44cd0c273e8b
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Jan 22 09:53:44 2013 -0800
+
+    rev for 2.1.3
+
+commit 4ba12f2b2d966e14cec0b83bae33122e53cb25ba
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 21 23:01:18 2013 -0800
+
+    snapshot
+
+commit d7a0e6c0047d75713ae73696eee8e0b32573b534
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 21 13:43:02 2013 -0800
+
+    snapshot
+
+commit 0a65c6e0bcdce1dfc8b59e2d9522d552a4963483
+Merge: a3ba0a8 e2bb479
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 21 13:41:36 2013 -0800
+
+    Merge starsquare pull for #350 cssPrefix
+
+commit a3ba0a82d1f378ff27e69ba0cfa05a183232cfbd
+Author: jrburke <jrburke@gmail.com>
+Date:   Sun Jan 20 22:08:27 2013 -0800
+
+    snapshot
+
+commit 05644c2eb4418e3853b2546330e567b09709faf6
+Author: jrburke <jrburke@gmail.com>
+Date:   Sun Jan 20 22:07:54 2013 -0800
+
+    Relates to #336, fix error message, now that start/end are not both required.
+
+commit c1be5af39ee8a0c0bdb74ce1df4ffe35277b2f49
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 16 17:18:57 2013 -0800
+
+    snapshot update
+
+commit 2774d2fb4ca202c8fcc0e2dbc8a89644fd18f7a9
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 16 13:00:08 2013 -0800
+
+    snapshot
+
+commit 3cda5e806a4e7c3ff1f13b1ad12a56322b80946c
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 16 12:59:55 2013 -0800
+
+    Fixes #348, shim config with a file that has a define was not getting adapter define written
+
+commit e2bb4797063390d3709e9fb0ab59b12c9a5f4f71
+Author: Chris Buckley <chris@cmbuckley.co.uk>
+Date:   Wed Jan 16 01:25:20 2013 +0000
+
+    Remove cssRelativeUrl test case, implement cssPrefix option (Fixes #350)
+
+commit 791dd20bd11c78924107945972d4f97bdfbe8738
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Jan 15 16:18:34 2013 -0800
+
+    Refs #342, update links for more info on uglifyjs2
+
+commit 77306cc819ded34e19dd6c2322731ba2ccd3f138
+Author: Chris Buckley <chris@cmbuckley.co.uk>
+Date:   Tue Jan 15 23:57:17 2013 +0000
+
+    Test cases for #350
+
+commit 05aba2c453eaac58d30e1512e74d803ac539045d
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Jan 15 15:46:27 2013 -0800
+
+    Relates to #342, example uglify2 config
+
+commit b0b034006ab929d0b03b5ee3a38a7fa276bb5144
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Jan 15 15:31:13 2013 -0800
+
+    snapshot
+
+commit 85a1423015991507c85de0fc30c066dc51ca9648
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Jan 15 15:30:47 2013 -0800
+
+    Fixes #351, introduce throwWhen option
+
+commit a80e60f1e9567ffb9e23630f7244fcd54d19608a
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 14 21:16:56 2013 -0800
+
+    Refs #346, fix typo in readme about running tests in java
+
+commit cb109377f51781a49671894bd0ae914cb7131cc7
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 14 17:33:39 2013 -0800
+
+    snapshot
+
+commit 7f001904530f80e0c4abb7bbd41d631f7a3199ef
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 14 17:33:27 2013 -0800
+
+    Fixes #333, paths normalization in browser builds was not to absolute values.
+
+commit 6dfa9fe5d13a95503e5a59cbe3c55185179c995b
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 14 11:47:36 2013 -0800
+
+    snapshot
+
+commit 5730eb1eef2d0ae5230886baa9dd80188f850b47
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 14 11:47:17 2013 -0800
+
+    Relates to #341, add a namespace rewrite for string amd detection
+
+commit 89fc7bd38dd67a359407b4e22bcab40277b7baed
+Author: jrburke <jrburke@gmail.com>
+Date:   Mon Jan 14 11:33:56 2013 -0800
+
+    Forgot to commit test file
+
+commit be3b2c4ba41e8dbbf81f4eec4f6d285183774ac5
+Author: jrburke <jrburke@gmail.com>
+Date:   Fri Jan 11 15:21:19 2013 -0800
+
+    save off a test, not sure really in use.
+
+commit 6fb2758aecf0d626dd3d21f832fec4c80bb439a4
+Author: jrburke <jrburke@gmail.com>
+Date:   Fri Jan 11 15:20:47 2013 -0800
+
+    snapshot
+
+commit 7b2a5bf7988b49f589e6792aad69f9285ee180d7
+Merge: 5e2aba0 7c8c752
+Author: jrburke <jrburke@gmail.com>
+Date:   Fri Jan 11 15:12:29 2013 -0800
+
+    Fixes #323, uglify with tabs fails. Merge branch 'ug2'
+
+commit 5e2aba027d4fc42b5c5e7cdaf2f7366fe17dd1e1
+Author: jrburke <jrburke@gmail.com>
+Date:   Thu Jan 10 15:41:59 2013 -0800
+
+    forgot to commit some test files
+
+commit 7c8c7529fe683749bc5e0e9dcead85090f232338
+Author: jrburke <jrburke@gmail.com>
+Date:   Thu Jan 10 15:15:40 2013 -0800
+
+    Fixes #323, uglify2 was not working with files containing tabs.
+
+commit 4d071125363b8fd50c20ae6ab3e4db91908a1206
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 14:28:46 2013 -0800
+
+    snapshot
+
+commit 489b34357d2ac62494c7f164b30c6d177b125572
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 14:28:10 2013 -0800
+
+    Relates to #331, wire up test.
+
+commit 60eb8aa3bb170b4c7b0b4a5089b7cb1fb4b4429d
+Merge: 8207871 a609335
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 14:21:12 2013 -0800
+
+    merge of pull #331
+
+commit 8207871448097a21e1870e7731a5ec7675e04017
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 14:12:57 2013 -0800
+
+    snapshot
+
+commit 1af45420d8d8e31f5f33c2e16de0c182aa6ff1e2
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 14:12:40 2013 -0800
+
+    Fixes #336, allow wrap start or end to be optional
+
+commit fbb73685c48bc80d4d6426b089108a52c672be36
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 12:45:09 2013 -0800
+
+    snapshot
+
+commit d1d7922a8987250c3661a86e047270d42854c331
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 12:44:07 2013 -0800
+
+    Fixes #340, remove some line breaks in cjs translation to preserve line numbers.
+
+commit f1dc8d678df0fe91e8e4d122d1d99e0647fc0655
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 12:31:13 2013 -0800
+
+    snapshot
+
+commit 95b9e7beae2ce43aea86dcdcec8c18952ee31dca
+Author: jrburke <jrburke@gmail.com>
+Date:   Wed Jan 9 12:30:31 2013 -0800
+
+    config mod tests work well enough now, serialization is good enough, given vagaries of Function.toString
+
+commit 9c0bd562db3c73b3186a0c71e3cbee98a860f9cd
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Jan 8 16:20:13 2013 -0800
+
+    getting closer on config mod, the mod works, but the indentation is not right yet.
+
+commit b6a3eeb1512f0e5e4a13fa90245892ed1a32ceb2
+Author: jrburke <jrburke@gmail.com>
+Date:   Tue Jan 8 13:18:26 2013 -0800
+
+    initial pass at config modification. Needs more tests, and does not actually work yet.
+
+commit 7f3fc4707af6540c808b87d7bbe222a606e36dd2
+Author: jrburke <jrburke@gmail.com>
+Date:   Sun Jan 6 23:45:12 2013 -0800
+
+    snapshot
+
+commit 809cd84892e1f12ba9ef61602861b282b2070d92
+Author: jrburke <jrburke@gmail.com>
+Date:   Sun Jan 6 23:44:36 2013 -0800
+
+    Fixes #339, give a good message about incompatible appDir and out
+
+commit 4132bb4f489302dc262025674c25b5d5c5bcdc72
+Author: jrburke <jrburke@gmail.com>
+Date:   Sun Jan 6 19:47:44 2013 -0800
+
+    Relates to #338, clean up readme a bit
+
+commit 289d8e76d159a0fe3c44700c8b698c85999ed3be
+Author: jrburke <jrburke@gmail.com>
+Date:   Sun Jan 6 19:47:07 2013 -0800
+
+    Relates to #338, clean up readme a bit
+
+commit a6fa490cbeef68143e10e1805e5ac2612bc46270
+Author: jrburke <jrburke@gmail.com>
+Date:   Sun Jan 6 15:45:55 2013 -0800
+
+    Updating to prim 0.0.1
+
 commit e742f9955347ef35125b431392f47a12932da67d
 Author: jrburke <jrburke@gmail.com>
 Date:   Fri Dec 21 20:54:59 2012 -0800
@@ -9,6 +462,26 @@ Author: jrburke <jrburke@gmail.com>
 Date:   Tue Dec 18 10:16:07 2012 -0800
 
     Fixes #335, show that errors are returned via errbacks now.
+
+commit a609335fe0c47a677bcf7e57f3d3a4e6dd216218
+Author: Max Peterson <max@incuna.com>
+Date:   Thu Dec 13 22:11:11 2012 +0000
+
+    Add test for #jrburke/r.js#310
+
+commit 036f268f229566ac242947942ddd8c1302ac54a9
+Author: Max Peterson <max@incuna.com>
+Date:   Thu Dec 13 21:04:47 2012 +0000
+
+    Use nonPackageName.
+
+commit f027ed908a0f93b2eaa7ab10561bbd5f0ec15783
+Author: Max Peterson <max@incuna.com>
+Date:   Tue Dec 11 17:04:30 2012 +0000
+
+    Load shim from package name if no shim for moduleName.
+    
+    Possible fix for jrburke/r.js#310
 
 commit 2abda7e789c2688834a908129a33d8178547f73a
 Author: jrburke <jrburke@gmail.com>

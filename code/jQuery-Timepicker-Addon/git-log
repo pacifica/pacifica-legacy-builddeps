@@ -1,3 +1,235 @@
+commit e752ef7f4564d2c2e47a763a5602817f049e494b
+Merge: a9ba30d 7bdc82c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Feb 2 10:26:14 2013 -0500
+
+    Merge branch 'dev'
+
+commit 7bdc82c06cf2286e6628e8d800577d53674cbaae
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Feb 2 10:21:31 2013 -0500
+
+    Fixes minify syntax error
+
+commit aa6ac66597ad71a10a15723393266a46310ece4b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Feb 2 10:17:24 2013 -0500
+
+    Update version, ready to merge
+
+commit 8549720bd0de7fe69c4010ecb760ff1d4bc542df
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 29 14:25:09 2013 -0500
+
+    Fixes #543 - jqueryui 1.10 no longer implements $.datepicker.log
+
+commit 4c03811337a5c3feb765feec3bcca6ee3771d51c
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 29 14:15:16 2013 -0500
+
+    Update docs
+
+commit 2307be611337b1c50eb05b49c04fe45b61948e21
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 29 12:32:17 2013 -0500
+
+    #515 - Add comonent.json for Bower
+
+commit ee180416918a079c88f18f5ea75ab3c4a6b22c19
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 29 11:46:51 2013 -0500
+
+    Fixes #540 - ASP.NET bundling syntax error fix
+
+commit 3744b50ebedc55b66e81ad91237c88c2906acd4b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 29 11:42:12 2013 -0500
+
+    Fixes issue #470 - getDate null if only sliders used
+
+commit 394d09a2c32e1c7b9e8fea2615c3efb267ef1c77
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Jan 19 09:07:42 2013 -0500
+
+    New dev version
+
+commit a9ba30d39d7952da9c942c4db4d4bc4712c23e0f
+Merge: d9e9d7c 8041ecb
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Jan 19 08:06:18 2013 -0500
+
+    Merge branch 'dev'
+
+commit 8041ecb1c9354ddc68524e8a0d05beb8c3d9150f
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Jan 19 08:02:46 2013 -0500
+
+    Remove dev from version
+
+commit 552bac4b578fac67f16f93e3ded649f33c1c39a5
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Sat Jan 19 08:02:01 2013 -0500
+
+    Clean up docs
+
+commit 998ae43f9c08e9c2b678b55cf665ce84f2ac2c48
+Merge: ed56a3b 13ab774
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Jan 18 04:55:02 2013 -0800
+
+    Merge pull request #535 from magnetik/patch-1
+    
+    Fixes #471
+
+commit ed56a3b8a419e0f2862ccec2457b700bc74fc1d3
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Jan 18 07:46:36 2013 -0500
+
+    Update jquery and jqueryui in docs
+
+commit 13ab774347c36667ead6b112ab69683baf0341f2
+Author: Baptiste Lafontaine <baptiste33@gmail.com>
+Date:   Thu Jan 17 10:48:17 2013 +0100
+
+    Fixes #471
+    
+    It may have some side effect. Seems working fine for me
+
+commit c94e202a843255b2fe265306c06c775bef3009dd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 15 14:02:43 2013 -0500
+
+    Basque localization by n3k0rA
+
+commit 8f9a66053bfbc5be39759d2a286ebb1eb33f6a6b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jan 14 16:26:44 2013 -0500
+
+    Rollback doc changes
+
+commit e3f8fc318a6a74ec1ea97f466c7ffb06534b8631
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jan 14 16:26:03 2013 -0500
+
+    Update loose parse to try multiple formats
+
+commit 113812e6156124b05db00b8baf614212dbcd0146
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jan 14 15:44:51 2013 -0500
+
+    Update loose parse to use ISO
+
+commit 3fd05087bee7cc6aebd04cb1d6a8e257b2750b4b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Jan 11 14:22:12 2013 -0500
+
+    Improve parsing flexibility
+
+commit 6f22271d4772d301b67dd590bd2c5b61920d678b
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Jan 11 14:16:50 2013 -0500
+
+    Fix parsing for single digits
+
+commit 4beef27867d2396371dc6ff4be484af51c624baa
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Jan 9 09:14:16 2013 -0500
+
+    Fix conditions for maxDate detection
+
+commit 1b9f726ed50d3e831200ef0aab0e80c27d621bf9
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jan 7 09:45:00 2013 -0500
+
+    Fixes bug hourMin/Max defaults the input before setting a time
+
+commit 67413080e768cb76b6cf9f4eabc77cbc5933e726
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Mon Jan 7 09:29:02 2013 -0500
+
+    Fixes bug hourMin/Max defaults the input before setting a time
+
+commit 016efa665e72a82d9f9616e1bd3ead018a78c865
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 1 19:00:11 2013 -0500
+
+    scambra- fix setting time in cooperation with step settings
+
+commit 2c8cf8fa8ca614fe159269f299d924c436f7309d
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 1 18:52:41 2013 -0500
+
+    Fix encoding of pt-BR
+
+commit 07e7f0689a8f492d99dc0b51e895d221dda786a7
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Jan 1 18:50:49 2013 -0500
+
+    Thai localization by figgaro
+
+commit 26765c322a4d8b53f631b9ff0c0d6bc2da8770fd
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Dec 19 14:46:33 2012 -0500
+
+    Update Czech localization by bohumirslama
+
+commit bdff862003ea33a649b64bfc2e59d8938e7d1964
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Dec 19 14:43:57 2012 -0500
+
+    Portuguese update by dufernandes
+
+commit 1ba5387f38067a0c22b3119842dbdc8052891efe
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Dec 7 15:21:02 2012 -0500
+
+    Fix spinner event in example
+
+commit b449d81653388eb0221442d5e6997fb1b46147a0
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Fri Dec 7 15:16:39 2012 -0500
+
+    Fix spinner event in example
+
+commit 7318a3dabf8c1c1e431590af767e07a3bb418636
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Dec 4 08:13:49 2012 -0500
+
+    Update jQuery and jQuery UI
+
+commit 3d664dabe7731520e717d2c9a840a3ad41de49a6
+Merge: 76285d2 8ad3f66
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Tue Nov 27 13:58:34 2012 -0800
+
+    Merge pull request #511 from LawrenceLeung/dev
+    
+    Switch substr to slice as IE8 doesn't do negative substr properly
+
+commit 8ad3f66f1cb5a43af0fbbd327bcfe4c85c523983
+Author: Lawrence <lawrence@optify.net>
+Date:   Tue Nov 27 10:35:00 2012 -0800
+
+    Switch substr to slice as IE8 doesn't do negative substr properly
+
+commit 76285d24e90b1e1ee05cd51d55d01e655fb8eea8
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 15 09:33:06 2012 -0500
+
+    Timezone change now fires onSelect
+
+commit 63bd242d2ee0f112075ca0bac9632e91040344cb
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Thu Nov 15 08:34:37 2012 -0500
+
+    Raykov - date range and alternate fields
+
+commit 285650a934e5262e5721526f2fa1a1dc409f32b0
+Author: Trent Richardson <trentdrichardson@gmail.com>
+Date:   Wed Nov 7 17:58:12 2012 -0500
+
+    New dev version
+
 commit d9e9d7cd7912d69b232dc87263f0339a6f166ccd
 Merge: f503ab2 e23e650
 Author: Trent Richardson <trentdrichardson@gmail.com>

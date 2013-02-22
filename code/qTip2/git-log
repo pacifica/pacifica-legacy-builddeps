@@ -1,3 +1,137 @@
+commit 2e2bf7f1ac965f1ef08ae426553cb8e13ccb0129
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Wed Feb 20 11:04:09 2013 +0000
+
+    Potential fix for max-width viewport issues
+
+commit a5461277f313193ce69fa4d186f63b999e224241
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Wed Feb 20 10:48:39 2013 +0000
+
+    Add much better image load detecion using stripped down version of David DeSando's plugin. Also make comments look better.
+
+commit 35996e3347b98e9272cd117b8fcd009fd474268b
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 18 19:09:24 2013 +0000
+
+    Set rendered flag to false when destroying too.
+
+commit ddc892a63bb6e38508b1b8242c9074c78ffb12c2
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Wed Feb 13 18:11:20 2013 +0000
+
+    Fix modal overlay reference bug. Fixes #471, thanks MaklaCof
+
+commit d173478bfdff17f853e4bbc9bc68be1acf20d574
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Tue Feb 12 19:20:09 2013 +0000
+
+    Make destroys non-immediate by default, hiding first then destroying. Ensure we call .toggle on modal overlay when destroying. Also ensure we remove current reference to tooltip on toggle if it has been destroyed.
+
+commit e0379329fe7cac194a9824222455afd460fe2c04
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 13:17:18 2013 +0000
+
+    Add Opera hack to ensure correct positioning of tip. Fixes #367
+
+commit 60a993a617dcea0fb495937956fee042a975a71e
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 12:48:46 2013 +0000
+
+    Fix tip border issue due to missing canvas styling
+
+commit fa2edebeb82d52390ae217215397bdcc1f2b4c03
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 12:41:15 2013 +0000
+
+    Fix 'center' tip adjustment issue when using shift viewport repositioning. Fixes #457
+
+commit b9d64f226f16e18239fd316eafab526d6d0c9622
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 12:31:06 2013 +0000
+
+    Add ability to prevent reposition on container/document scroll using position.adjust.scroll
+
+commit 0409af9e408fab84a2e8868a2b33f596806b71a9
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 12:28:18 2013 +0000
+
+    Fix hide.leave problem with IE. Fixes
+    #466
+
+commit cb6ec620db8553577a6627d6d178fac81b4527a1
+Merge: 68e636f ff7ae53
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 11:28:50 2013 +0000
+
+    Merge
+
+commit 68e636fd744a9aae1566204c9d187136b886a986
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 11:27:55 2013 +0000
+
+    Move constants out into global scope
+
+commit 3d9d1345df1ca50e774e1f70ba8c2df285e0293d
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 11:14:15 2013 +0000
+
+    Much improved modal functionality. Split Overlay and per-tooltip functionality out
+
+commit 772eb68d17390ff88a9e9add7cd9f342ad2bb92f
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Mon Feb 11 11:13:33 2013 +0000
+
+    Better destroy improvements to re-allocate memory properly
+
+commit ff7ae53ea689c61a1e59624fe74689e36c541e89
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Sat Feb 9 20:05:18 2013 +0000
+
+    Fix silly square bracket access using dot notation
+
+commit 73551a9e077abbb8797709470ce22143fe49ec1c
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Sat Feb 9 19:54:06 2013 +0000
+
+    Fix $.cleanData recursion issue by using .one instead of .bind for 'remove' event
+
+commit c2b22a2e93113168a4a26afb04f22e819a3c3c3b
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Wed Feb 6 20:55:12 2013 +0000
+
+    Remove code from previous commit that wasn;t meant to be there
+
+commit e3a00609f9d13024e70fb0f0d8bf6f27e952f98c
+Merge: e368cc0 22d8628
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Wed Feb 6 20:52:35 2013 +0000
+
+    Merge branch 'master' of github.com:Craga89/qTip2
+
+commit e368cc079c5a7e9098f19f383621fa89e392caa4
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Wed Feb 6 20:52:00 2013 +0000
+
+    Remove need for $.browser using custom IE detection plugin
+
+commit 22d86284607f404c40f6f3f7c83c8198a4d5be41
+Merge: 386da94 d6d5523
+Author: Craig Michael Thompson <craig@craigsworks.com>
+Date:   Thu Jan 24 05:39:14 2013 -0800
+
+    Merge pull request #464 from rafalbigaj/master
+    
+    Prevent hiding qTip when it is disabled
+
+commit d6d55233100c28e3524df9005bbd821653b345f1
+Author: rafalbigaj <rafal.bigaj@gmail.com>
+Date:   Thu Jan 24 14:24:36 2013 +0100
+
+    Update src/core.js
+    
+    Prevent hiding qTip on unfocus (document click) when it is disabled
+
 commit 386da943ed5b233b2fd984c4444eecf136aecc77
 Author: Craig Michael Thompson <craig@craigsworks.com>
 Date:   Fri Jan 4 04:05:40 2013 +0000
