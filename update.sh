@@ -1,11 +1,11 @@
 #!/bin/bash
 
-JQUERY=1.8.3
-JQUERYUI=1.9.2
+JQUERY=1.9.1
+JQUERYUI=1.10.1
 JQUERYFORMWIZARD=3.0.7
 QUNIT=1.10.0
 
-VERSION=020
+VERSION=021
 
 if git tag -l | grep -q $VERSION
 then
@@ -20,7 +20,9 @@ wget -O fileicons.zip 'http://www.splitbrain.org/lib/exe/fetch.php?hash=92529a&m
 wget -O jquery.min.js http://code.jquery.com/jquery-$JQUERY.min.js
 wget -O jquery.js http://code.jquery.com/jquery-$JQUERY.js
 wget -O jquery-jtemplates.js http://jtemplates.tpython.com/jTemplates/jquery-jtemplates.js
-../form-download.py -f jquery-ui-$JQUERYUI.custom.zip
+#../form-download.py -f jquery-ui-$JQUERYUI.custom.zip
+wget -O jquery-ui.zip http://jqueryui.com/resources/download/jquery-ui-$JQUERYUI.custom.zip
+wget -O jquery-ui-themes.zip http://jqueryui.com/resources/download/jquery-ui-themes-$JQUERYUI.zip
 wget -O qunit.js http://code.jquery.com/qunit/qunit-$QUNIT.js
 wget -O qunit.css http://code.jquery.com/qunit/qunit-$QUNIT.css
 rm -rf r.js
@@ -58,15 +60,18 @@ popd
 rm -rf html5shiv/
 rm -f html5shiv.zip
 
-unzip -o jquery-ui-$JQUERYUI.custom.zip
+unzip -o jquery-ui.zip
+unzip -o jquery-ui-themes.zip
 rm -rf jquery-ui
 mv jquery-ui-$JQUERYUI.custom jquery-ui
+mv jquery-ui/css jquery-ui/css-old
+mv jquery-ui-themes-$JQUERYUI/themes jquery-ui/css
 mv jquery-ui/js/jquery-$JQUERY.js jquery-ui/js/jquery.js
 mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.js jquery-ui/js/jquery-ui.js
 mv jquery-ui/js/jquery-ui-$JQUERYUI.custom.min.js jquery-ui/js/jquery-ui.min.js
 mv jquery-ui/css/ui-lightness/jquery-ui-$JQUERYUI.custom.min.css jquery-ui/css/ui-lightness/jquery-ui.min.css
 mv jquery-ui/css/ui-lightness/jquery-ui-$JQUERYUI.custom.css jquery-ui/css/ui-lightness/jquery-ui.css
-rm -f jquery-ui-$JQUERYUI.custom.zip
+rm -f jquery-ui-$JQUERYUI.zip
 rm -rf jquery.formwizard
 mkdir jquery.formwizard
 pushd jquery.formwizard
@@ -75,7 +80,7 @@ mv thecodemine-formwizard-*/* .
 rmdir thecodemine-formwizard-*
 popd
 rm -f jquery.formwizard-$JQUERYFORMWIZARD.zip
-unzip fileicons.zip
+unzip -o fileicons.zip
 rm -f fileicons.zip
 
 popd
