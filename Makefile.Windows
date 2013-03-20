@@ -28,13 +28,24 @@ printsettings:
 
 build-prep-early:
 	test ! -d build && mkdir build || true
+	test ! -d build/bin && mkdir build/bin || true
+	test ! -d build/lib && mkdir build/lib || true
+	test ! -d build/lib/pkgconfig && mkdir build/lib/pkgconfig || true
+	test ! -d build/include && mkdir build/include || true
+	test ! -d build/include/qtservice && mkdir build/include/qtservice || true
 
 build-prep: build-prep-early
 
 build-qmake:
-	cd qmake && make
-	cd qmake && make install
-	cp -u build/bin/myemslauth.dll build/release
+	cp -a code/buildable/qtservice/ build/
+	cd build/qtservice && ./configure -library
+	cd build/qtservice && $(QMAKE) && make
+	cp -a build/qtservice/lib/QtSolutions_Service-head.dll build/bin/QtSolutions_Service.dll
+	cp -a build/qtservice/lib/libQtSolutions_Service-head.a build/lib/QtSolutions_Service.a
+	cp -a build/qtservice/src/QtServiceBase build/include/qtservice
+	cp -a build/qtservice/src/QtServiceController build/include/qtservice
+	cp -a build/qtservice/src/qtservice.h build/include/qtservice
+	cp -a qtsolutionsservice.pc.win build/lib/pkgconfig/qtsolutionsservice.pc
 
 build-all: build-prep build-qmake
 
