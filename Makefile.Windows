@@ -41,6 +41,7 @@ build-qmake:
 	cd build/qtservice && ./configure -library
 	cd build/qtservice && $(QMAKE)
 #FIX odd Fedora win32 build issue.
+	cd build/qtservice && make buildlib/Makefile
 	sed -i 's/IMPORT/EXPORT/g' build/qtservice/buildlib/Makefile.*
 	cd build/qtservice && make
 	cp -a build/qtservice/lib/QtSolutions_Service-head.dll build/bin/QtSolutions_Service.dll
