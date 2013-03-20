@@ -22,6 +22,9 @@ rpm: dist
 	mkdir -p packages/bin packages/src
 	rpmbuild --define '_rpmdir '`pwd`'/packages/bin' --define '_srcrpmdir '`pwd`'/packages/src' $(RPMOPTIONS) -ta myemsl-builddeps-$(VERSION).tar.gz
 
+myemslbuilddepssdk.wxs: myemslbuilddepssdk.wxs.in
+	sed "s/@VERSION@/$(VERSION)/g" < myemslbuilddepssdk.wxs.in > myemslbuilddepssdk.wxs
+
 rpms: rpm
 
 clean:

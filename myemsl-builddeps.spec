@@ -46,7 +46,7 @@ MyEMSL build time dependencies for windows
 %setup -q
 
 %build
-echo "Nothing to Build"
+make myemslbuilddepssdk.wxs
 
 %install
 dir=$RPM_BUILD_ROOT/%{_prefix}/lib/myemsl/builddeps
@@ -56,8 +56,9 @@ cp -r code/* $dir/
 %if %{use_windows}
 mkdir -p "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"
 rm -f "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip
-pushd $dir
-zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip *
+zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip myemslbuilddepssdk.wxs code
+pushd scripts
+zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip scripts/bundle.bat
 popd
 %endif
 
