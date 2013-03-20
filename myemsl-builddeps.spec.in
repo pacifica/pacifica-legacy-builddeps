@@ -10,6 +10,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %{!?dist: %define dist .el5}
 
+%global mingw32_root /usr/i686-w64-mingw32/sys-root/mingw
+
 %if 0%{?_with_windows:1}
 	%global use_windows 1
 %else
@@ -40,6 +42,22 @@ Requires: %{name}
 
 %description -n mingw32-myemsl-builddeps-zip
 MyEMSL build time dependencies for windows
+
+%package -n     mingw32-qtsolutionsservice
+Summary:        QT Solutions Service library
+Group:          System Environment/Base
+Requires: %{name}
+
+%description -n mingw32-qtsolutionsservice
+QT Solutions Service library
+
+%package -n     mingw32-qtsolutionsservice-devel
+Summary:        QT Solutions Service library development files
+Group:          System Environment/Base
+Requires: %{name}
+
+%description -n mingw32-qtsolutionsservice-devel
+QT Solutions Service library development files
 %endif
 
 %prep
@@ -65,6 +83,14 @@ zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip build
 pushd scripts
 zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip bundle.bat
 popd
+mkdir -p "$RPM_BUILD_ROOT/%{mingw32_root}"
+unzip build-win32.zip 'build/lib/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
+unzip build-win32.zip 'build/include/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
+unzip build-win32.zip 'build/bin/myemslauth.dll' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
+mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/lib" "$RPM_BUILD_ROOT/%{mingw32_root}/lib"
+mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/include" "$RPM_BUILD_ROOT/%{mingw32_root}/include"
+mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/bin" "$RPM_BUILD_ROOT/%{mingw32_root}/bin"
+rmdir "$RPM_BUILD_ROOT/%{mingw32_root}/build"
 %endif
 
 %clean
@@ -74,6 +100,20 @@ rm -rf $RPM_BUILD_ROOT
 %files -n mingw32-myemsl-builddeps-zip
 %defattr(-,root,root)
 /usr/share/myemsl/builddeps/*
+
+%files -n mingw32-myemsl-builddeps-zip
+%defattr(-,root,root)
+/usr/share/myemsl/builddeps/*
+
+%files -n mingw32-qtsolutionsservice
+%defattr(-,root,root)
+%{mingw32_root}/bin/QtSolutions_Service.dll
+
+%files -n mingw32-qtsolutionsservice-devel
+%defattr(-,root,root)
+%{mingw32_root}/include
+%{mingw32_root}/lib/libQtSolutions_Service.a
+%{mingw32_root}/lib/pkgconfig
 %endif
 
 %files
