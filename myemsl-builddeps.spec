@@ -87,7 +87,7 @@ popd
 mkdir -p "$RPM_BUILD_ROOT/%{mingw32_root}"
 unzip "$BUILDZIP" 'build/lib/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
 unzip "$BUILDZIP" 'build/include/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
-unzip "$BUILDZIP" 'build/bin/myemslauth.dll' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
+unzip "$BUILDZIP" 'build/bin/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
 mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/lib" "$RPM_BUILD_ROOT/%{mingw32_root}/lib"
 mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/include" "$RPM_BUILD_ROOT/%{mingw32_root}/include"
 mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/bin" "$RPM_BUILD_ROOT/%{mingw32_root}/bin"
