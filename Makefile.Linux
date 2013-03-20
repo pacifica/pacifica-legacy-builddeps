@@ -1,0 +1,20 @@
+OS = Linux
+
+QMAKE = qmake-qt47
+
+build-all: build-qmake
+
+MOCKDIST=fedora-18-x86_64
+MOCK=/usr/bin/mock
+
+mock: dist
+	mkdir -p packages/"$(MOCKDIST)"/srpms
+	mkdir -p packages/"$(MOCKDIST)"/bin
+	$(MOCK) -r "$(MOCKDIST)" --buildsrpm --spec myemslauth.spec --sources "`pwd`"
+	mv "/var/lib/mock/$(MOCKDIST)/result/"*.src.rpm packages/"$(MOCKDIST)"/srpms/
+	$(MOCK) -r "$(MOCKDIST)" --result "$(CURDIR)"/packages/"$(MOCKDIST)"/bin "$(CURDIR)"/packages/"$(MOCKDIST)"/srpms/*.src.rpm
+	if [ -f packages/"$(MOCKDIST)"/bin/mingw32-myemsl-builddeps-zip-*.rpm ]; then \
+		rpm2cpio packages/"$(MOCKDIST)"/bin/mingw32-myemsl-builddeps-zip-*.rpm  | cpio -idmv ./usr/share/myemsl/builddeps/build-win32.zip;	\
+		mv ./usr/share/myemsl/builddeps/build-win32.zip .; \
+		rm -rf usr; \
+	fi
