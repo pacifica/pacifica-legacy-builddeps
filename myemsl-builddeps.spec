@@ -76,17 +76,18 @@ mkdir -p $dir
 rm -f myemsl-builddeps.spec
 cp -r code/* $dir/
 %if %{use_windows}
+BUILDZIP="$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip
 mkdir -p "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"
-rm -f "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip
-zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip myemslbuilddepssdk.wxs qtsolutionsservice.pc code
-zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip build
+rm -f "$BUILDZIP"
+zip -r "$BUILDZIP" myemslbuilddepssdk.wxs qtsolutionsservice.pc code
+zip -r "$BUILDZIP" build
 pushd scripts
-zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip bundle.bat
+zip -r "$BUILDZIP" bundle.bat
 popd
 mkdir -p "$RPM_BUILD_ROOT/%{mingw32_root}"
-unzip build-win32.zip 'build/lib/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
-unzip build-win32.zip 'build/include/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
-unzip build-win32.zip 'build/bin/myemslauth.dll' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
+unzip "$BUILDZIP" 'build/lib/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
+unzip "$BUILDZIP" 'build/include/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
+unzip "$BUILDZIP" 'build/bin/myemslauth.dll' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
 mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/lib" "$RPM_BUILD_ROOT/%{mingw32_root}/lib"
 mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/include" "$RPM_BUILD_ROOT/%{mingw32_root}/include"
 mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/bin" "$RPM_BUILD_ROOT/%{mingw32_root}/bin"
