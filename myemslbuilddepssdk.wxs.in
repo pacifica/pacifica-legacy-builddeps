@@ -55,10 +55,37 @@
 				</Component>
 				<Directory Id="BUILDDEPSDIR" Name="builddeps">
 				</Directory>
+				<Directory Id="LIBDIR" Name="lib">
+					<Component Id="LIB" Guid="C8EE063E-6439-403C-8BF4-4E3275007201">
+						<File Id="libqtsolutionsservicea"
+							Name="libQtSolutions_Service.a"
+							Source="build/lib/libQtSolutions_Service.a"
+							KeyPath="yes"/>
+					</Component>
+					<Directory Id="PKGCFGDIR" Name="pkgconfig">
+						<Component Id="PKGCFG" Guid="0F5A4D23-5B37-4D69-96A9-FEBAE70725ED">
+							<File Id="qtsolutionsservicepc"
+								Name="qtsolutionsservice.pc"
+								Source="build/lib/pkgconfig/qtsolutionsservice.pc"
+								KeyPath="yes"/>
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="BINDIR" Name="bin">
+					<Component Id="BIN" Guid="71B5D2C1-5997-4B67-A944-7A5B15D5C615">
+						<File Id="qtsolutionsservicedll"
+							Name="bQtSolutions_Service.dll"
+							Source="build/bin/QtSolutions_Service.dll"
+							KeyPath="yes"/>
+					</Component>
+				</Directory>
 			</Directory>
 		</Directory>
 		<Feature Id="Complete" Level="1">
 			<ComponentRef Id="SDKENV"/>
+			<ComponentRef Id="BIN"/>
+			<ComponentRef Id="LIB"/>
+			<ComponentRef Id="PKGCFG"/>
 			<ComponentGroupRef Id="MyEMSLBuilddeps"/>
 		</Feature>
 
