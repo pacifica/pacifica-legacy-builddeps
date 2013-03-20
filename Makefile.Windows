@@ -41,7 +41,7 @@ build-qmake:
 	cd build/qtservice && ./configure -library
 	cd build/qtservice && $(QMAKE) && make
 	cp -a build/qtservice/lib/QtSolutions_Service-head.dll build/bin/QtSolutions_Service.dll
-	cp -a build/qtservice/lib/libQtSolutions_Service-head.a build/lib/QtSolutions_Service.a
+	cp -a build/qtservice/lib/libQtSolutions_Service-head.a build/lib/libQtSolutions_Service.a
 	cp -a build/qtservice/src/QtServiceBase build/include/qtservice
 	cp -a build/qtservice/src/QtServiceController build/include/qtservice
 	cp -a build/qtservice/src/qtservice.h build/include/qtservice
