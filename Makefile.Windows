@@ -1,0 +1,44 @@
+# include local vars for overwriting default variables.
+-include Makefile.local
+
+OS = Windows
+
+MINGWBINDIR ?= /c/QtSDK/mingw/bin
+QTBINDIR ?= /c/QtSDK/Desktop/Qt/4.8.1/mingw/bin
+
+PKGCONFIG ?= /c/pkg-config
+PKGCONFIGBIN ?= $(PKGCONFIG)/bin
+
+#$WIX is defined in the WIX MSI installer as "C:\Program Files (x86)\WiX Toolset v3.6\"
+#MSys can properly use this path.
+#If WiX was installed manually (e.g. zip extract to c:\wix), uncomment:
+#WIX = /c/wix
+WIXBIN ?= $(WIX)bin
+
+QMAKE ?= qmake
+
+export PKG_CONFIG_PATH := $(PKG_CONFIG_PATH):$(CURLDIR)/lib/pkgconfig
+
+export PATH := $(MINGWBINDIR):$(QTBINDIR):$(WIXBIN):$(PKGCONFIGBIN):$(PATH)
+
+printsettings:
+	@echo MINGWBINDIR="$(MINGWBINDIR)"
+	@echo PATH="$(PATH)"
+	@echo PKGCONFIG_CURL="`pkg-config --cflags --libs libcurl`|eof"
+
+build-prep-early:
+	test ! -d build && mkdir build || true
+
+build-prep: build-prep-early
+
+build-qmake:
+	cd qmake && make
+	cd qmake && make install
+	cp -u build/bin/myemslauth.dll build/release
+
+build-all: build-prep build-qmake
+
+msi: msis
+
+msis: clean all myemslbuilddepssdk.wxs
+	cmd /c scripts\\bundle.bat
