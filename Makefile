@@ -1,4 +1,5 @@
-VERSION=$(grep ^VERSION update.sh | sed 's/.*=//')
+VERSION=$(shell grep ^VERSION update.sh | sed 's/.*=//')
+WINVER=$(shell echo -n 1.;echo $(VERSION) | sed 's/^[0]*//')
 
 UNAME=$(shell uname)
 
@@ -23,7 +24,8 @@ rpm: dist
 	rpmbuild --define '_rpmdir '`pwd`'/packages/bin' --define '_srcrpmdir '`pwd`'/packages/src' $(RPMOPTIONS) -ta myemsl-builddeps-$(VERSION).tar.gz
 
 myemslbuilddepssdk.wxs: myemslbuilddepssdk.wxs.in
-	sed "s/@VERSION@/$(VERSION)/g" < myemslbuilddepssdk.wxs.in > myemslbuilddepssdk.wxs
+	echo $(WINVER)
+	sed "s/@VERSION@/$(WINVER)/g" < myemslbuilddepssdk.wxs.in > myemslbuilddepssdk.wxs
 
 rpms: rpm
 

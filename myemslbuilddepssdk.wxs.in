@@ -59,7 +59,7 @@
 		</Directory>
 		<Feature Id="Complete" Level="1">
 			<ComponentRef Id="SDKENV"/>
-			<ComponentGroupRef Id="MyEMSLBuilddir"/>
+			<ComponentGroupRef Id="MyEMSLBuilddeps"/>
 		</Feature>
 
 		<Condition Message="You need to be an administrator to install this package.">Privileged</Condition>
