@@ -58,7 +58,7 @@ mkdir -p "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"
 rm -f "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip
 zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip myemslbuilddepssdk.wxs code
 pushd scripts
-zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip scripts/bundle.bat
+zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip bundle.bat
 popd
 %endif
 
