@@ -1,0 +1,6 @@
+QMAKE = i686-w64-mingw32-qmake-qt4
+
+MINGWBINDIR = $(CURLDIR)/bin
+QTBINDIR ?= $(CURLDIR)/bin
+
+include Makefile.Windows

@@ -6,5 +6,5 @@ includedir=${prefix}/include
 Name: qtsolutionsservice
 Description: qtsolutionsservice
 Version: 0.1.0
-Cflags: -I${includedir}
+Cflags: -I${includedir}/qtservice
 Libs: -L${libdir} -lQtSolutions_Service

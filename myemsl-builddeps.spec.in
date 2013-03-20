@@ -46,12 +46,22 @@ MyEMSL build time dependencies for windows
 %setup -q
 
 %build
+%if %{use_windows}
+make clean
+mingw32-make UNAME=MINGW32_CROSS QMAKE=i686-w64-mingw32-qmake-qt4 build-prep build-qmake myemslbuilddepssdk.wxs
+%endif
 make myemslbuilddepssdk.wxs
 
 %install
+dir=$RPM_BUILD_ROOT/%{_prefix}/lib/myemsl/builddeps
+mkdir -p $dir
+rm -f myemsl-builddeps.spec
+cp -r code/* $dir/
+%if %{use_windows}
 mkdir -p "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"
 rm -f "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip
-zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip myemslbuilddepssdk.wxs code
+zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip myemslbuilddepssdk.wxs qtsolutionsservice.pc code
+zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip build
 pushd scripts
 zip -r "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip bundle.bat
 popd
