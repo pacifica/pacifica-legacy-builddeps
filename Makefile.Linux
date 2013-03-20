@@ -10,7 +10,7 @@ MOCK=/usr/bin/mock
 mock: dist
 	mkdir -p packages/"$(MOCKDIST)"/srpms
 	mkdir -p packages/"$(MOCKDIST)"/bin
-	$(MOCK) -r "$(MOCKDIST)" --buildsrpm --spec myemslauth.spec --sources "`pwd`"
+	$(MOCK) -r "$(MOCKDIST)" --buildsrpm --spec myemsl-builddeps.spec --sources "`pwd`"
 	mv "/var/lib/mock/$(MOCKDIST)/result/"*.src.rpm packages/"$(MOCKDIST)"/srpms/
 	$(MOCK) -r "$(MOCKDIST)" --result "$(CURDIR)"/packages/"$(MOCKDIST)"/bin "$(CURDIR)"/packages/"$(MOCKDIST)"/srpms/*.src.rpm
 	if [ -f packages/"$(MOCKDIST)"/bin/mingw32-myemsl-builddeps-zip-*.rpm ]; then \
