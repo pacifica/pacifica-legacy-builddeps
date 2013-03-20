@@ -38,7 +38,7 @@ Summary:        MyEMSL build time dependencies for windows
 Group:          System Environment/Base
 Requires: %{name}
 
-%description -n mingw32-myemsl-buildeps-zip
+%description -n mingw32-myemsl-builddeps-zip
 MyEMSL build time dependencies for windows
 %endif
 
@@ -65,7 +65,7 @@ popd
 rm -rf $RPM_BUILD_ROOT
 
 %if %{use_windows}
-%files -n mingw32-myemsl-builddeps
+%files -n mingw32-myemsl-builddeps-zip
 %defattr(-,root,root)
 /usr/share/myemsl/builddeps/*
 %endif
