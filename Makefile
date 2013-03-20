@@ -29,3 +29,7 @@ rpms: rpm
 
 clean:
 	rm -rf build
+	rm -rf packages
+	rm -f myemslbuilddepssdk.wxs
+	rm -rf build-win32.zip
+	rm -rf myemsl-builddeps-*.tar.gz
