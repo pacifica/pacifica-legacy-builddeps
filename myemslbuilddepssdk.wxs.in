@@ -71,10 +71,28 @@
 						</Component>
 					</Directory>
 				</Directory>
+				<Directory Id="INCLUDEDIR" Name="include">
+					<Directory Id="QTSERVICE" Name="qtservice">
+						<Component Id="QTSERVICEHEADERS" Guid="24119010-92E8-40B0-A13E-2E9A917B4DBF">
+							<File Id="qtservicebase"
+								Name="QtServiceBase"
+								Source="build/include/qtservice/QtServiceBase"
+								KeyPath="yes"/>
+							<File Id="qtservicecontroller"
+								Name="QtServiceController"
+								Source="build/include/qtservice/QtServiceController"
+								KeyPath="no"/>
+							<File Id="qtserviceh"
+								Name="qtservice.h"
+								Source="build/include/qtservice/qtservice.h"
+								KeyPath="no"/>
+						</Component>
+					</Directory>
+				</Directory>
 				<Directory Id="BINDIR" Name="bin">
 					<Component Id="BIN" Guid="71B5D2C1-5997-4B67-A944-7A5B15D5C615">
 						<File Id="qtsolutionsservicedll"
-							Name="bQtSolutions_Service.dll"
+							Name="QtSolutions_Service.dll"
 							Source="build/bin/QtSolutions_Service.dll"
 							KeyPath="yes"/>
 					</Component>
@@ -85,6 +103,7 @@
 			<ComponentRef Id="SDKENV"/>
 			<ComponentRef Id="BIN"/>
 			<ComponentRef Id="LIB"/>
+			<ComponentRef Id="QTSERVICEHEADERS"/>
 			<ComponentRef Id="PKGCFG"/>
 			<ComponentGroupRef Id="MyEMSLBuilddeps"/>
 		</Feature>
