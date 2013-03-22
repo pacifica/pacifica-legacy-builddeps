@@ -43,7 +43,7 @@ build-qmake:
 #FIX odd Fedora win32 build issue.
 	cd build/qtservice && make buildlib/Makefile
 	for file in Debug Release; do \
-		sed 's/IMPORT/EXPORT/g' build/qtservice/buildlib/Makefile.$$file build/qtservice/buildlib/Makefile.tmp; \
+		sed 's/IMPORT/EXPORT/g' build/qtservice/buildlib/Makefile.$$file > build/qtservice/buildlib/Makefile.tmp; \
 		mv build/qtservice/buildlib/Makefile.tmp build/qtservice/buildlib/Makefile.$$file; \
 	done
 	cd build/qtservice && make
