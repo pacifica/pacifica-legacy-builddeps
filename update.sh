@@ -91,7 +91,7 @@ unzip -o fileicons.zip
 rm -f fileicons.zip
 
 popd
-sed 's/@VERSION@/'$VERSION'/g' myemsl-builddeps.spec.in > myemsl-builddeps.spec
+sed 's/@VERSION@/'$VERSION'/g' pacifica-builddeps.spec.in > pacifica-builddeps.spec
 git add -A code
 git commit -a -m "Auto Update to $VERSION"
 git tag $VERSION

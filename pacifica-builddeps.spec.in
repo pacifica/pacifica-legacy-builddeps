@@ -1,7 +1,7 @@
-Name: myemsl-builddeps
+Name: pacifica-builddeps
 Version: @VERSION@
 Release: 1%{?dist}
-Summary: MyEMSL build time dependencies
+Summary: Pacifica build time dependencies
 Group: System Environment/Base
 License: UNKNOWN
 Source: %{name}-%{version}.tar.gz
@@ -32,16 +32,16 @@ BuildRequires: mingw32-pkg-config mingw32-qt zip unzip
 %endif
 
 %description
-MyEMSL build time dependencies
+Pacifica build time dependencies
 
 %if %{use_windows}
-%package -n     mingw32-myemsl-builddeps-zip
-Summary:        MyEMSL build time dependencies for windows
+%package -n     mingw32-pacifica-builddeps-zip
+Summary:        Pacifica build time dependencies for windows
 Group:          System Environment/Base
 Requires: %{name}
 
-%description -n mingw32-myemsl-builddeps-zip
-MyEMSL build time dependencies for windows
+%description -n mingw32-pacifica-builddeps-zip
+Pacifica build time dependencies for windows
 
 %package -n     mingw32-qtsolutionsservice
 Summary:        QT Solutions Service library
@@ -66,20 +66,20 @@ QT Solutions Service library development files
 %build
 %if %{use_windows}
 make clean
-mingw32-make UNAME=MINGW32_CROSS QMAKE=i686-w64-mingw32-qmake-qt4 build-prep build-qmake myemslbuilddepssdk.wxs
+mingw32-make UNAME=MINGW32_CROSS QMAKE=i686-w64-mingw32-qmake-qt4 build-prep build-qmake pacificabuilddepssdk.wxs
 %endif
-make myemslbuilddepssdk.wxs
+make pacificabuilddepssdk.wxs
 
 %install
-dir=$RPM_BUILD_ROOT/%{_prefix}/lib/myemsl/builddeps
+dir=$RPM_BUILD_ROOT/%{_prefix}/lib/pacifica/builddeps
 mkdir -p $dir
-rm -f myemsl-builddeps.spec
+rm -f pacifica-builddeps.spec
 cp -r code/* $dir/
 %if %{use_windows}
-BUILDZIP="$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"/build-win32.zip
-mkdir -p "$RPM_BUILD_ROOT/usr/share/myemsl/builddeps"
+BUILDZIP="$RPM_BUILD_ROOT/usr/share/pacifica/builddeps"/build-win32.zip
+mkdir -p "$RPM_BUILD_ROOT/usr/share/pacifica/builddeps"
 rm -f "$BUILDZIP"
-zip -r "$BUILDZIP" myemslbuilddepssdk.wxs qtsolutionsservice.pc code
+zip -r "$BUILDZIP" pacificabuilddepssdk.wxs qtsolutionsservice.pc code
 zip -r "$BUILDZIP" build
 pushd scripts
 zip -r "$BUILDZIP" bundle.bat
@@ -98,13 +98,13 @@ rmdir "$RPM_BUILD_ROOT/%{mingw32_root}/build"
 rm -rf $RPM_BUILD_ROOT
 
 %if %{use_windows}
-%files -n mingw32-myemsl-builddeps-zip
+%files -n mingw32-pacifica-builddeps-zip
 %defattr(-,root,root)
-/usr/share/myemsl/builddeps/*
+/usr/share/pacifica/builddeps/*
 
-%files -n mingw32-myemsl-builddeps-zip
+%files -n mingw32-pacifica-builddeps-zip
 %defattr(-,root,root)
-/usr/share/myemsl/builddeps/*
+/usr/share/pacifica/builddeps/*
 
 %files -n mingw32-qtsolutionsservice
 %defattr(-,root,root)
@@ -119,4 +119,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%{_prefix}/lib/myemsl/builddeps/*
+%{_prefix}/lib/pacifica/builddeps/*

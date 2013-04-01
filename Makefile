@@ -7,12 +7,6 @@ all: build-all
 
 include Makefile.${UNAME}
 
-myemslauth.spec: myemslauth.spec.in
-	sed "s/@VERSION@/$(VERSION)/g" < myemslauth.spec.in > myemslauth.spec
-
-myemslauth.pc: myemslauth.pc.in
-	sed "s/@VERSION@/$(VERSION)/g" < myemslauth.pc.in > myemslauth.pc
-
 dist: clean
 	bash build.sh
 
@@ -21,17 +15,17 @@ RPMOPTIONS=
 rpm: dist
 	rm -rf packages
 	mkdir -p packages/bin packages/src
-	rpmbuild --define '_rpmdir '`pwd`'/packages/bin' --define '_srcrpmdir '`pwd`'/packages/src' $(RPMOPTIONS) -ta myemsl-builddeps-$(VERSION).tar.gz
+	rpmbuild --define '_rpmdir '`pwd`'/packages/bin' --define '_srcrpmdir '`pwd`'/packages/src' $(RPMOPTIONS) -ta pacifica-builddeps-$(VERSION).tar.gz
 
-myemslbuilddepssdk.wxs: myemslbuilddepssdk.wxs.in
+pacificabuilddepssdk.wxs: pacificabuilddepssdk.wxs.in
 	echo $(WINVER)
-	sed "s/@VERSION@/$(WINVER)/g" < myemslbuilddepssdk.wxs.in > myemslbuilddepssdk.wxs
+	sed "s/@VERSION@/$(WINVER)/g" < pacificabuilddepssdk.wxs.in > pacificabuilddepssdk.wxs
 
 rpms: rpm
 
 clean:
 	rm -rf build
 	rm -rf packages
-	rm -f myemslbuilddepssdk.wxs
+	rm -f pacificabuilddepssdk.wxs
 	rm -rf build-win32.zip
-	rm -rf myemsl-builddeps-*.tar.gz
+	rm -rf pacifica-builddeps-*.tar.gz

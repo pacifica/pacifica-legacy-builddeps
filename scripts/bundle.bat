@@ -1,7 +1,7 @@
 set PATH=%PATH%;c:\wix
-heat dir "code" -srd -cg MyEMSLBuilddeps -gg -sfrag -dr BUILDDEPSDIR -var var.MyEMSLBuilddeps -out myemslbuilddeps.wxs || goto :error
-candle myemslbuilddepssdk.wxs myemslbuilddeps.wxs -dMyEMSLBuilddeps=code || goto :error
-light -out myemslbuilddeps myemslbuilddeps.wixobj myemslbuilddepssdk.wixobj || goto :error
+heat dir "code" -srd -cg PacificaBuilddeps -gg -sfrag -dr BUILDDEPSDIR -var var.PacificaBuilddeps -out pacificabuilddeps.wxs || goto :error
+candle pacificabuilddepssdk.wxs pacificabuilddeps.wxs -dPacificaBuilddeps=code || goto :error
+light -out pacificabuilddeps pacificabuilddeps.wixobj pacificabuilddepssdk.wixobj || goto :error
 exit /b 0
 
 :error

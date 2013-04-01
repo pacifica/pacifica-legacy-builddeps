@@ -58,5 +58,5 @@ build-all: build-prep build-qmake
 
 msi: msis
 
-msis: clean all myemslbuilddepssdk.wxs
+msis: clean all pacificabuilddepssdk.wxs
 	cmd /c scripts\\bundle.bat

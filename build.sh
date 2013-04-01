@@ -2,12 +2,12 @@
 
 eval $(grep ^VERSION update.sh)
 
-ln -s . myemsl-builddeps-$VERSION
+ln -s . pacifica-builddeps-$VERSION
 tar \
-  --exclude=myemsl-builddeps-$VERSION/myemsl-builddeps-$VERSION.tar.gz \
-  --exclude=myemsl-builddeps-$VERSION/myemsl-builddeps-$VERSION \
-  --exclude=myemsl-builddeps-$VERSION/.git \
-  -czf myemsl-builddeps-$VERSION.tar.gz \
-  myemsl-builddeps-$VERSION/*
+  --exclude=pacifica-builddeps-$VERSION/pacifica-builddeps-$VERSION.tar.gz \
+  --exclude=pacifica-builddeps-$VERSION/pacifica-builddeps-$VERSION \
+  --exclude=pacifica-builddeps-$VERSION/.git \
+  -czf pacifica-builddeps-$VERSION.tar.gz \
+  pacifica-builddeps-$VERSION/*
 
-rm myemsl-builddeps-$VERSION
+rm pacifica-builddeps-$VERSION
