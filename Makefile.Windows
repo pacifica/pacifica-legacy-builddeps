@@ -38,6 +38,7 @@ build-prep: build-prep-early
 
 build-qmake:
 	cp -a code/buildable/qtservice/ build/
+	sed -i 's/QtSolutions_Service-head/QtSolutions_Service/' common.pri
 	cd build/qtservice && ./configure -library
 	cd build/qtservice && $(QMAKE)
 #FIX odd Fedora win32 build issue.
@@ -47,8 +48,8 @@ build-qmake:
 		mv build/qtservice/buildlib/Makefile.tmp build/qtservice/buildlib/Makefile.$$file; \
 	done
 	cd build/qtservice && make
-	cp -a build/qtservice/lib/QtSolutions_Service-head.dll build/bin/QtSolutions_Service.dll
-	cp -a build/qtservice/lib/libQtSolutions_Service-head.a build/lib/libQtSolutions_Service.a
+	cp -a build/qtservice/lib/QtSolutions_Service.dll build/bin/QtSolutions_Service.dll
+	cp -a build/qtservice/lib/libQtSolutions_Service.a build/lib/libQtSolutions_Service.a
 	cp -a build/qtservice/src/QtServiceBase build/include/qtservice
 	cp -a build/qtservice/src/QtServiceController build/include/qtservice
 	cp -a build/qtservice/src/qtservice.h build/include/qtservice
