@@ -86,6 +86,7 @@ zip -r "$BUILDZIP" bundle.bat
 popd
 mkdir -p "$RPM_BUILD_ROOT/%{mingw32_root}"
 unzip "$BUILDZIP" 'build/lib/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
+sed -i 's:^prefix=.*:prefix=%{mingw32_root}:' "$RPM_BUILD_ROOT/%{mingw32_root}"/build/lib/pkgconfig/qtsolutionsservice.pc
 unzip "$BUILDZIP" 'build/include/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
 unzip "$BUILDZIP" 'build/bin/*' -d "$RPM_BUILD_ROOT/%{mingw32_root}"
 mv "$RPM_BUILD_ROOT/%{mingw32_root}/build/lib" "$RPM_BUILD_ROOT/%{mingw32_root}/lib"
