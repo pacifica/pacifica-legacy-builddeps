@@ -1,3 +1,9 @@
+#Work around win32 libs getting mangled.
+%global debug_package %{nil}
+%global __strip /usr/bin/touch
+%global __spec_install_post /usr/lib/rpm/check-rpaths   /usr/lib/rpm/check-buildroot  \
+  /usr/lib/rpm/brp-compress
+   
 Name: pacifica-builddeps
 Version: 022
 Release: 1%{?dist}
