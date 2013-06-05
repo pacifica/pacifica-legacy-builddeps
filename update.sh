@@ -5,7 +5,7 @@ JQUERYUI=1.10.1
 JQUERYFORMWIZARD=3.0.7
 QUNIT=1.10.0
 
-VERSION=022
+VERSION=023
 
 if git tag -l | grep -q $VERSION
 then
@@ -25,6 +25,7 @@ wget -O jquery-ui.zip http://jqueryui.com/resources/download/jquery-ui-$JQUERYUI
 wget -O jquery-ui-themes.zip http://jqueryui.com/resources/download/jquery-ui-themes-$JQUERYUI.zip
 wget -O qunit.js http://code.jquery.com/qunit/qunit-$QUNIT.js
 wget -O qunit.css http://code.jquery.com/qunit/qunit-$QUNIT.css
+wget -O base64.min.js https://raw.github.com/davidchambers/Base64.js/master/base64.min.js
 rm -rf r.js
 git clone https://github.com/jrburke/r.js.git
 rm -rf qTip2

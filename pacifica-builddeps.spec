@@ -5,7 +5,7 @@
   /usr/lib/rpm/brp-compress
    
 Name: pacifica-builddeps
-Version: 022
+Version: 023
 Release: 1%{?dist}
 Summary: Pacifica build time dependencies
 Group: System Environment/Base
